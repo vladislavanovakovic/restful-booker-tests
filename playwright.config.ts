@@ -1,4 +1,4 @@
-import { PlaywrightTestConfig } from '@playwright/test'
+import { PlaywrightTestConfig, devices} from '@playwright/test'
 
 const config: PlaywrightTestConfig = {
   timeout: 60000,
@@ -25,17 +25,18 @@ const config: PlaywrightTestConfig = {
   },
   projects: [
     {
-      name: 'Chromium',
-      use: { browserName: 'chromium' }
-    },
-    {
-      name: 'Firefox',
-      use: { browserName: 'firefox' },
+      name: 'chromium',
+      use: { ...devices['Desktop Chrome'] },
     },
 
     {
-      name: 'Webkit',
-      use: { browserName: 'webkit' },
+      name: 'firefox',
+      use: { ...devices['Desktop Firefox'] },
+    },
+
+    {
+      name: 'webkit',
+      use: { ...devices['Desktop Safari'] },
     },
   ]
 }
