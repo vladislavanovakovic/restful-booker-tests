@@ -32,12 +32,7 @@ const config: PlaywrightTestConfig = {
     {
       name: 'Firefox',
       use: { ...devices['Desktop Firefox'] },
-    },
-
-    /*{
-      name: 'Webkit',
-      use: { ...devices['Desktop Safari'] },
-    },*/
+    }
   ]
 }
 export default config
