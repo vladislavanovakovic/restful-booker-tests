@@ -1,2 +1,2 @@
 # restful-booker-tests
-Project for test automation practices purpose
+Project for test automation practice
