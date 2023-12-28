@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "c:\\Users\\vl.novakovic\\Desktop\\restful-booker-tests\\playwright.config.ts",
-    "rootDir": "c:/Users/vl.novakovic/Desktop/restful-booker-tests",
+    "configFile": "c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\playwright.config.ts",
+    "rootDir": "c:/Users/vl.novakovic/Documents/repos/restful-booker-tests",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -28,11 +28,11 @@
         }
       ],
       [
-        "c:\\Users\\vl.novakovic\\Desktop\\restful-booker-tests\\node_modules\\allure-playwright\\dist\\index.js",
+        "c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\node_modules\\allure-playwright\\dist\\index.js",
         null
       ],
       [
-        "c:\\Users\\vl.novakovic\\Desktop\\restful-booker-tests\\node_modules\\monocart-reporter\\lib\\index.js",
+        "c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\node_modules\\monocart-reporter\\lib\\index.js",
         {
           "name": "Monokart Report",
           "outputFile": "./test-results/monokartReport.html"
@@ -46,12 +46,25 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "c:/Users/vl.novakovic/Desktop/restful-booker-tests/test-results",
+        "outputDir": "c:/Users/vl.novakovic/Documents/repos/restful-booker-tests/test-results",
         "repeatEach": 1,
         "retries": 0,
         "id": "Chromium",
         "name": "Chromium",
-        "testDir": "c:/Users/vl.novakovic/Desktop/restful-booker-tests",
+        "testDir": "c:/Users/vl.novakovic/Documents/repos/restful-booker-tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "c:/Users/vl.novakovic/Documents/repos/restful-booker-tests/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "Firefox",
+        "name": "Firefox",
+        "testDir": "c:/Users/vl.novakovic/Documents/repos/restful-booker-tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -81,7 +94,7 @@
           "specs": [
             {
               "title": "Customer must be able to book a room by filling up mandatory fields @sanity",
-              "ok": true,
+              "ok": false,
               "tags": [
                 "sanity"
               ],
@@ -95,17 +108,47 @@
                   "results": [
                     {
                       "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 5308,
-                      "errors": [],
+                      "status": "failed",
+                      "duration": 18979,
+                      "error": {
+                        "message": "Error: locator.hover: Timeout 15000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('.rbc-day-bg:not(.rbc-off-range-bg)').last()\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"rbc-day-bg\"></div>\u001b[22m\n\u001b[2m  - attempting hover action\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #1\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #2\u001b[22m\n\u001b[2m  -   waiting 20ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #3\u001b[22m\n\u001b[2m  -   waiting 100ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #4\u001b[22m\n\u001b[2m  -   waiting 100ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #5\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #6\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #7\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #8\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #9\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #10\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #11\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #12\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #13\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #14\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #15\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #16\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #17\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #18\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #19\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #20\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #21\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #22\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #23\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #24\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #25\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #26\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #27\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #28\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #29\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #30\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #31\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n",
+                        "stack": "Error: locator.hover: Timeout 15000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('.rbc-day-bg:not(.rbc-off-range-bg)').last()\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"rbc-day-bg\"></div>\u001b[22m\n\u001b[2m  - attempting hover action\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #1\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #2\u001b[22m\n\u001b[2m  -   waiting 20ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #3\u001b[22m\n\u001b[2m  -   waiting 100ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #4\u001b[22m\n\u001b[2m  -   waiting 100ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #5\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #6\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #7\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #8\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #9\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #10\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #11\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #12\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #13\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #14\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #15\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #16\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #17\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #18\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #19\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #20\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #21\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #22\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #23\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #24\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #25\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #26\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #27\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #28\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #29\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #30\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #31\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\n    at FrontPage.selectAvailableDates (c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\pages\\FrontPage.ts:76:27)\n    at c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\tests\\bookRoom.spec.ts:43:5",
+                        "location": {
+                          "file": "c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\pages\\FrontPage.ts",
+                          "column": 27,
+                          "line": 76
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39mpages\\FrontPage.ts:76\n\n\u001b[0m \u001b[90m 74 |\u001b[39m     \u001b[36mawait\u001b[39m calendarStartDate\u001b[33m.\u001b[39mhover()\u001b[0m\n\u001b[0m \u001b[90m 75 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mmouse\u001b[33m.\u001b[39mdown()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 76 |\u001b[39m     \u001b[36mawait\u001b[39m calendarEndDate\u001b[33m.\u001b[39mhover()\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 77 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mmouse\u001b[33m.\u001b[39mup()\u001b[0m\n\u001b[0m \u001b[90m 78 |\u001b[39m   }\u001b[0m\n\u001b[0m \u001b[90m 79 |\u001b[39m   \u001b[36masync\u001b[39m clickBookButton() {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\pages\\FrontPage.ts",
+                            "column": 27,
+                            "line": 76
+                          },
+                          "message": "Error: locator.hover: Timeout 15000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('.rbc-day-bg:not(.rbc-off-range-bg)').last()\u001b[22m\n\u001b[2m  -   locator resolved to <div class=\"rbc-day-bg\"></div>\u001b[22m\n\u001b[2m  - attempting hover action\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #1\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #2\u001b[22m\n\u001b[2m  -   waiting 20ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #3\u001b[22m\n\u001b[2m  -   waiting 100ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #4\u001b[22m\n\u001b[2m  -   waiting 100ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #5\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #6\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #7\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #8\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #9\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #10\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #11\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #12\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #13\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #14\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #15\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #16\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #17\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #18\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #19\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #20\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #21\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #22\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #23\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #24\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #25\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #26\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #27\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #28\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #29\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #30\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\u001b[2m  -   waiting for element to be visible and stable\u001b[22m\n\u001b[2m  -   element is visible and stable\u001b[22m\n\u001b[2m  -   scrolling into view if needed\u001b[22m\n\u001b[2m  -   done scrolling\u001b[22m\n\u001b[2m  -   <div title=\"Unavailable\" class=\"rbc-event-content\">Unavailable</div> from <div role=\"row\" class=\"rbc-row-content\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying hover action, attempt #31\u001b[22m\n\u001b[2m  -   waiting 500ms\u001b[22m\n\n\n\u001b[90m   at \u001b[39mpages\\FrontPage.ts:76\n\n\u001b[0m \u001b[90m 74 |\u001b[39m     \u001b[36mawait\u001b[39m calendarStartDate\u001b[33m.\u001b[39mhover()\u001b[0m\n\u001b[0m \u001b[90m 75 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mmouse\u001b[33m.\u001b[39mdown()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 76 |\u001b[39m     \u001b[36mawait\u001b[39m calendarEndDate\u001b[33m.\u001b[39mhover()\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 77 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mmouse\u001b[33m.\u001b[39mup()\u001b[0m\n\u001b[0m \u001b[90m 78 |\u001b[39m   }\u001b[0m\n\u001b[0m \u001b[90m 79 |\u001b[39m   \u001b[36masync\u001b[39m clickBookButton() {\u001b[0m\n\n\u001b[2m    at FrontPage.selectAvailableDates (c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\pages\\FrontPage.ts:76:27)\u001b[22m\n\u001b[2m    at c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\tests\\bookRoom.spec.ts:43:5\u001b[22m"
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-27T09:06:01.419Z",
-                      "attachments": []
+                      "startTime": "2023-12-27T13:14:06.186Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\test-results\\tests-bookRoom-Book-a-Room-Customer-must-be-ab-10e3f-ok-a-room-by-filling-up-mandatory-fields-sanity-Chromium\\test-failed-1.png"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\pages\\FrontPage.ts",
+                        "column": 27,
+                        "line": 76
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "8c9cf7451491efc23e09-3ecc155862ddf806183b",
@@ -126,14 +169,14 @@
                   "projectName": "Chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 4,
                       "status": "passed",
-                      "duration": 3116,
+                      "duration": 2962,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-27T09:06:09.394Z",
+                      "startTime": "2023-12-27T13:14:31.253Z",
                       "attachments": []
                     }
                   ],
@@ -158,14 +201,14 @@
                   "projectName": "Chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 4,
                       "status": "passed",
-                      "duration": 3039,
+                      "duration": 2488,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-27T09:06:12.513Z",
+                      "startTime": "2023-12-27T13:14:35.176Z",
                       "attachments": []
                     }
                   ],
@@ -190,14 +233,14 @@
                   "projectName": "Chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 4,
                       "status": "passed",
-                      "duration": 3096,
+                      "duration": 2774,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-27T09:06:15.554Z",
+                      "startTime": "2023-12-27T13:14:37.666Z",
                       "attachments": []
                     }
                   ],
@@ -222,14 +265,14 @@
                   "projectName": "Chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 4,
                       "status": "passed",
-                      "duration": 3008,
+                      "duration": 2600,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-27T09:06:18.653Z",
+                      "startTime": "2023-12-27T13:14:40.442Z",
                       "attachments": []
                     }
                   ],
@@ -275,12 +318,12 @@
                     {
                       "workerIndex": 1,
                       "status": "passed",
-                      "duration": 3990,
+                      "duration": 2905,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-27T09:06:01.417Z",
+                      "startTime": "2023-12-27T13:14:06.194Z",
                       "attachments": []
                     }
                   ],
@@ -307,12 +350,12 @@
                     {
                       "workerIndex": 1,
                       "status": "passed",
-                      "duration": 2636,
+                      "duration": 2699,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-27T09:06:07.940Z",
+                      "startTime": "2023-12-27T13:14:10.925Z",
                       "attachments": []
                     }
                   ],
@@ -339,12 +382,12 @@
                     {
                       "workerIndex": 1,
                       "status": "passed",
-                      "duration": 2186,
+                      "duration": 2147,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-27T09:06:10.579Z",
+                      "startTime": "2023-12-27T13:14:13.627Z",
                       "attachments": []
                     }
                   ],
@@ -371,12 +414,12 @@
                     {
                       "workerIndex": 1,
                       "status": "passed",
-                      "duration": 2106,
+                      "duration": 1857,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-27T09:06:12.767Z",
+                      "startTime": "2023-12-27T13:14:15.776Z",
                       "attachments": []
                     }
                   ],
@@ -403,12 +446,12 @@
                     {
                       "workerIndex": 1,
                       "status": "passed",
-                      "duration": 2268,
+                      "duration": 1751,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-27T09:06:14.876Z",
+                      "startTime": "2023-12-27T13:14:17.635Z",
                       "attachments": []
                     }
                   ],
@@ -435,12 +478,12 @@
                     {
                       "workerIndex": 1,
                       "status": "passed",
-                      "duration": 2272,
+                      "duration": 1851,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-27T09:06:17.146Z",
+                      "startTime": "2023-12-27T13:14:19.388Z",
                       "attachments": []
                     }
                   ],
@@ -461,7 +504,72 @@
       "file": "tests/createRoom.spec.ts",
       "column": 0,
       "line": 0,
-      "specs": [],
+      "specs": [
+        {
+          "title": "Admin user must NOT be able to create new room with the room type empty",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Chromium",
+              "projectName": "Chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 466,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-12-27T13:14:13.717Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "75d87f9741b085816523-0f07a54ba47ac90fe889",
+          "file": "tests/createRoom.spec.ts",
+          "line": 45,
+          "column": 5
+        },
+        {
+          "title": "Admin user must NOT be able to create new room with the room price empty",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Chromium",
+              "projectName": "Chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 484,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-12-27T13:14:14.186Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "75d87f9741b085816523-2a45176fd0dfbb841ec2",
+          "file": "tests/createRoom.spec.ts",
+          "line": 48,
+          "column": 5
+        }
+      ],
       "suites": [
         {
           "title": "Creating room",
@@ -486,12 +594,12 @@
                     {
                       "workerIndex": 2,
                       "status": "passed",
-                      "duration": 4151,
+                      "duration": 3545,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-27T09:06:01.413Z",
+                      "startTime": "2023-12-27T13:14:06.210Z",
                       "attachments": []
                     }
                   ],
@@ -501,6 +609,38 @@
               "id": "75d87f9741b085816523-c21912787843971a032c",
               "file": "tests/createRoom.spec.ts",
               "line": 36,
+              "column": 7
+            },
+            {
+              "title": "Admin user must NOT be able to create new room with the room name empty",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Chromium",
+                  "projectName": "Chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "status": "passed",
+                      "duration": 2184,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-12-27T13:14:11.530Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "75d87f9741b085816523-04220a650cf3276211a1",
+              "file": "tests/createRoom.spec.ts",
+              "line": 41,
               "column": 7
             }
           ]
@@ -537,12 +677,12 @@
                     {
                       "workerIndex": 3,
                       "status": "passed",
-                      "duration": 2302,
+                      "duration": 2334,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-27T09:05:55.696Z",
+                      "startTime": "2023-12-27T13:14:00.308Z",
                       "attachments": []
                     }
                   ],
@@ -569,12 +709,12 @@
                     {
                       "workerIndex": 3,
                       "status": "passed",
-                      "duration": 2028,
+                      "duration": 2094,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-27T09:05:59.073Z",
+                      "startTime": "2023-12-27T13:14:03.769Z",
                       "attachments": []
                     }
                   ],
@@ -601,12 +741,12 @@
                     {
                       "workerIndex": 3,
                       "status": "passed",
-                      "duration": 2669,
+                      "duration": 2548,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-27T09:06:01.104Z",
+                      "startTime": "2023-12-27T13:14:05.866Z",
                       "attachments": []
                     }
                   ],
@@ -625,11 +765,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2023-12-27T09:05:51.872Z",
-    "duration": 29901.512000000002,
-    "expected": 15,
+    "startTime": "2023-12-27T13:13:56.015Z",
+    "duration": 47143.654,
+    "expected": 17,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }

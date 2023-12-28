@@ -42,3 +42,9 @@ test.describe('Creating room', () => {
     
   })
 })
+test('Admin user must NOT be able to create new room with the room type empty', async ({ page }) => {
+  
+})
+test('Admin user must NOT be able to create new room with the room price empty', async ({ page }) => {
+  
+})
