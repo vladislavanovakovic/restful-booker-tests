@@ -39,7 +39,10 @@ test.describe('Creating room', () => {
     await expect(createdRoom).toBeVisible()
   })
   test('Admin user must NOT be able to create new room with the room name empty', async ({ page }) => {
-    
+    await roomsPage.createRoom('', roomType, isRoomAccesible, roomPrice, roomFeatures)
+    const errorMessage = 'Room name must be set'
+    await expect(roomsPage.errorMessageBox).toBeVisible()
+    await expect(roomsPage.errorMessageBox).toContainText(errorMessage)
   })
 })
 test('Admin user must NOT be able to create new room with the room type empty', async ({ page }) => {

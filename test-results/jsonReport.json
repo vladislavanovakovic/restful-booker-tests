@@ -80,24 +80,22 @@
   },
   "suites": [
     {
-      "title": "tests\\bookRoom.spec.ts",
-      "file": "tests/bookRoom.spec.ts",
+      "title": "tests\\createRoom.spec.ts",
+      "file": "tests/createRoom.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Book a Room",
-          "file": "tests/bookRoom.spec.ts",
-          "line": 13,
+          "title": "Creating room",
+          "file": "tests/createRoom.spec.ts",
+          "line": 21,
           "column": 6,
           "specs": [
             {
-              "title": "Customer must be able to book a room by filling up mandatory fields @sanity",
+              "title": "Admin user must NOT be able to create new room with the room name empty",
               "ok": true,
-              "tags": [
-                "sanity"
-              ],
+              "tags": [],
               "tests": [
                 {
                   "timeout": 60000,
@@ -109,21 +107,21 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 2169,
+                      "duration": 2202,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-28T13:33:05.222Z",
+                      "startTime": "2023-12-29T10:30:26.904Z",
                       "attachments": []
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "8c9cf7451491efc23e09-3ecc155862ddf806183b",
-              "file": "tests/bookRoom.spec.ts",
-              "line": 40,
+              "id": "75d87f9741b085816523-04220a650cf3276211a1",
+              "file": "tests/createRoom.spec.ts",
+              "line": 41,
               "column": 7
             }
           ]
@@ -133,8 +131,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2023-12-28T13:32:57.749Z",
-    "duration": 9736.2,
+    "startTime": "2023-12-29T10:30:20.976Z",
+    "duration": 9130.587,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

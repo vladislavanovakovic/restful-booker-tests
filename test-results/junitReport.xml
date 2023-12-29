@@ -1,6 +1,6 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="6.24616">
-<testsuite name="tests\bookRoom.spec.ts" timestamp="2023-12-28T13:33:01.245Z" hostname="Chromium" tests="1" failures="0" skipped="0" time="2.169" errors="0">
-<testcase name="Book a Room › Customer must be able to book a room by filling up mandatory fields @sanity" classname="tests\bookRoom.spec.ts" time="2.169">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="6.35817">
+<testsuite name="tests\createRoom.spec.ts" timestamp="2023-12-29T10:30:23.753Z" hostname="Chromium" tests="1" failures="0" skipped="0" time="2.202" errors="0">
+<testcase name="Creating room › Admin user must NOT be able to create new room with the room name empty" classname="tests\createRoom.spec.ts" time="2.202">
 </testcase>
 </testsuite>
 </testsuites>

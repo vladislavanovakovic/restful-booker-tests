@@ -14,6 +14,7 @@ export class RoomsPage extends BasePage {
   readonly safeCheckbox: Locator
   readonly viewsCheckbox: Locator
   readonly createButton: Locator
+  readonly errorMessageBox: Locator
 
   constructor(page: Page) {
     super(page)
@@ -28,6 +29,7 @@ export class RoomsPage extends BasePage {
     this.wifiCheckbox = page.getByLabel('Safe')
     this.wifiCheckbox = page.getByLabel('Views')
     this.createButton = page.getByRole('button', { name: 'Create' })
+    this.errorMessageBox = page.locator('.alert-danger')
   }
   async goto() {
     await this.page.goto('https://automationintesting.online/#/admin')
