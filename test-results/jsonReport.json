@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "C:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\playwright.config.ts",
-    "rootDir": "C:/Users/vl.novakovic/Documents/repos/restful-booker-tests",
+    "configFile": "c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\playwright.config.ts",
+    "rootDir": "c:/Users/vl.novakovic/Documents/repos/restful-booker-tests",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 4
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "reporter": [
@@ -28,11 +28,11 @@
         }
       ],
       [
-        "C:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\node_modules\\allure-playwright\\dist\\index.js",
+        "c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\node_modules\\allure-playwright\\dist\\index.js",
         null
       ],
       [
-        "C:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\node_modules\\monocart-reporter\\lib\\index.js",
+        "c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\node_modules\\monocart-reporter\\lib\\index.js",
         {
           "name": "Monokart Report",
           "outputFile": "./test-results/monokartReport.html"
@@ -46,12 +46,12 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "C:/Users/vl.novakovic/Documents/repos/restful-booker-tests/test-results",
+        "outputDir": "c:/Users/vl.novakovic/Documents/repos/restful-booker-tests/test-results",
         "repeatEach": 1,
         "retries": 0,
         "id": "chromium",
         "name": "chromium",
-        "testDir": "C:/Users/vl.novakovic/Documents/repos/restful-booker-tests",
+        "testDir": "c:/Users/vl.novakovic/Documents/repos/restful-booker-tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -59,12 +59,12 @@
         "timeout": 60000
       },
       {
-        "outputDir": "C:/Users/vl.novakovic/Documents/repos/restful-booker-tests/test-results",
+        "outputDir": "c:/Users/vl.novakovic/Documents/repos/restful-booker-tests/test-results",
         "repeatEach": 1,
         "retries": 0,
         "id": "firefox",
         "name": "firefox",
-        "testDir": "C:/Users/vl.novakovic/Documents/repos/restful-booker-tests",
+        "testDir": "c:/Users/vl.novakovic/Documents/repos/restful-booker-tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -75,7 +75,7 @@
     "shard": null,
     "updateSnapshots": "missing",
     "version": "1.40.1",
-    "workers": 4,
+    "workers": 1,
     "webServer": null
   },
   "suites": [
@@ -109,33 +109,12 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 5431,
+                      "duration": 14654,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-29T12:41:35.444Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 4,
-                      "status": "passed",
-                      "duration": 8655,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-12-29T12:41:52.169Z",
+                      "startTime": "2023-12-29T12:55:42.611Z",
                       "attachments": []
                     }
                   ],
@@ -162,33 +141,12 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 3959,
+                      "duration": 11402,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-29T12:41:43.543Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 4,
-                      "status": "passed",
-                      "duration": 6919,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-12-29T12:42:03.068Z",
+                      "startTime": "2023-12-29T12:55:57.338Z",
                       "attachments": []
                     }
                   ],
@@ -215,33 +173,12 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 3592,
+                      "duration": 11234,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-29T12:41:47.505Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 4,
-                      "status": "passed",
-                      "duration": 5930,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-12-29T12:42:09.990Z",
+                      "startTime": "2023-12-29T12:56:08.743Z",
                       "attachments": []
                     }
                   ],
@@ -268,33 +205,12 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 3721,
+                      "duration": 12219,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-29T12:41:51.100Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 4,
-                      "status": "passed",
-                      "duration": 6216,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-12-29T12:42:15.926Z",
+                      "startTime": "2023-12-29T12:56:19.979Z",
                       "attachments": []
                     }
                   ],
@@ -321,33 +237,12 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 4201,
+                      "duration": 11494,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-29T12:41:54.823Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 4,
-                      "status": "passed",
-                      "duration": 4695,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-12-29T12:42:22.152Z",
+                      "startTime": "2023-12-29T12:56:32.200Z",
                       "attachments": []
                     }
                   ],
@@ -391,35 +286,14 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 0,
                       "status": "passed",
-                      "duration": 3942,
+                      "duration": 2758,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-29T12:41:35.460Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 5,
-                      "status": "passed",
-                      "duration": 6385,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-12-29T12:41:56.952Z",
+                      "startTime": "2023-12-29T12:56:43.709Z",
                       "attachments": []
                     }
                   ],
@@ -444,35 +318,14 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 0,
                       "status": "passed",
-                      "duration": 3126,
+                      "duration": 3316,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-29T12:41:41.910Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 5,
-                      "status": "passed",
-                      "duration": 4090,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-12-29T12:42:05.909Z",
+                      "startTime": "2023-12-29T12:56:46.469Z",
                       "attachments": []
                     }
                   ],
@@ -497,35 +350,14 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 0,
                       "status": "passed",
-                      "duration": 2711,
+                      "duration": 2776,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-29T12:41:45.040Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 5,
-                      "status": "passed",
-                      "duration": 4012,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-12-29T12:42:10.006Z",
+                      "startTime": "2023-12-29T12:56:49.788Z",
                       "attachments": []
                     }
                   ],
@@ -550,35 +382,14 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 0,
                       "status": "passed",
-                      "duration": 2453,
+                      "duration": 3048,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-29T12:41:47.754Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 5,
-                      "status": "passed",
-                      "duration": 4114,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-12-29T12:42:14.021Z",
+                      "startTime": "2023-12-29T12:56:52.566Z",
                       "attachments": []
                     }
                   ],
@@ -603,35 +414,14 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 0,
                       "status": "passed",
-                      "duration": 2616,
+                      "duration": 2035,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-29T12:41:50.210Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 5,
-                      "status": "passed",
-                      "duration": 4222,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-12-29T12:42:18.138Z",
+                      "startTime": "2023-12-29T12:56:55.615Z",
                       "attachments": []
                     }
                   ],
@@ -656,35 +446,14 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 0,
                       "status": "passed",
-                      "duration": 2856,
+                      "duration": 2015,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-29T12:41:52.828Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 5,
-                      "status": "passed",
-                      "duration": 3078,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-12-29T12:42:22.364Z",
+                      "startTime": "2023-12-29T12:56:57.651Z",
                       "attachments": []
                     }
                   ],
@@ -728,35 +497,14 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 0,
                       "status": "passed",
-                      "duration": 4237,
+                      "duration": 6390,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-29T12:41:35.399Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 6,
-                      "status": "passed",
-                      "duration": 8482,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-12-29T12:42:07.793Z",
+                      "startTime": "2023-12-29T12:56:59.677Z",
                       "attachments": []
                     }
                   ],
@@ -781,35 +529,14 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 0,
                       "status": "passed",
-                      "duration": 2961,
+                      "duration": 5874,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-29T12:41:42.326Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 6,
-                      "status": "passed",
-                      "duration": 3610,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-12-29T12:42:20.829Z",
+                      "startTime": "2023-12-29T12:57:06.068Z",
                       "attachments": []
                     }
                   ],
@@ -834,35 +561,14 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 0,
                       "status": "passed",
-                      "duration": 2750,
+                      "duration": 6145,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-29T12:41:45.291Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 6,
-                      "status": "passed",
-                      "duration": 2910,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-12-29T12:42:24.443Z",
+                      "startTime": "2023-12-29T12:57:11.943Z",
                       "attachments": []
                     }
                   ],
@@ -906,35 +612,14 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 0,
                       "status": "passed",
-                      "duration": 6017,
+                      "duration": 1981,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-29T12:41:30.961Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 7,
-                      "status": "passed",
-                      "duration": 8093,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-12-29T12:42:01.029Z",
+                      "startTime": "2023-12-29T12:57:18.095Z",
                       "attachments": []
                     }
                   ],
@@ -959,35 +644,14 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 0,
                       "status": "passed",
-                      "duration": 2996,
+                      "duration": 1927,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-29T12:41:38.000Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 7,
-                      "status": "passed",
-                      "duration": 3501,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-12-29T12:42:13.334Z",
+                      "startTime": "2023-12-29T12:57:20.077Z",
                       "attachments": []
                     }
                   ],
@@ -1012,35 +676,14 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 0,
                       "status": "passed",
-                      "duration": 2402,
+                      "duration": 2601,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-12-29T12:41:41.000Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 7,
-                      "status": "passed",
-                      "duration": 3220,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-12-29T12:42:16.839Z",
+                      "startTime": "2023-12-29T12:57:22.005Z",
                       "attachments": []
                     }
                   ],
@@ -1059,9 +702,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2023-12-29T12:41:27.365Z",
-    "duration": 61145.055,
-    "expected": 34,
+    "startTime": "2023-12-29T12:55:36.301Z",
+    "duration": 108352.894,
+    "expected": 17,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
