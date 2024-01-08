@@ -1,44 +1,44 @@
-<testsuites id="" name="" tests="17" failures="0" skipped="0" errors="0" time="26.564367999999998">
-<testsuite name="tests\bookRoom.spec.ts" timestamp="2023-12-29T14:02:40.175Z" hostname="chromium" tests="5" failures="0" skipped="0" time="18.938" errors="0">
-<testcase name="Book a Room › Customer must be able to book a room by filling up mandatory fields @sanity" classname="tests\bookRoom.spec.ts" time="5.424">
+<testsuites id="" name="" tests="17" failures="0" skipped="0" errors="0" time="27.483578">
+<testsuite name="tests\bookRoom.spec.ts" timestamp="2024-01-08T08:56:39.842Z" hostname="chromium" tests="5" failures="0" skipped="0" time="20.675" errors="0">
+<testcase name="Book a Room › Customer must be able to book a room by filling up mandatory fields @sanity" classname="tests\bookRoom.spec.ts" time="5.342">
 </testcase>
-<testcase name="Book a Room › Customer must NOT be able to book a room without filling up the First name field" classname="tests\bookRoom.spec.ts" time="3.62">
+<testcase name="Book a Room › Customer must NOT be able to book a room without filling up the First name field" classname="tests\bookRoom.spec.ts" time="4.093">
 </testcase>
-<testcase name="Book a Room › Customer must NOT be able to book a room without filling up the Last name field" classname="tests\bookRoom.spec.ts" time="3.145">
+<testcase name="Book a Room › Customer must NOT be able to book a room without filling up the Last name field" classname="tests\bookRoom.spec.ts" time="3.933">
 </testcase>
-<testcase name="Book a Room › Customer must NOT be able to book a room without filling up the Email field" classname="tests\bookRoom.spec.ts" time="3.533">
+<testcase name="Book a Room › Customer must NOT be able to book a room without filling up the Email field" classname="tests\bookRoom.spec.ts" time="3.806">
 </testcase>
-<testcase name="Book a Room › Customer must NOT be able to book a room without filling up the Phone field" classname="tests\bookRoom.spec.ts" time="3.216">
-</testcase>
-</testsuite>
-<testsuite name="tests\contactHotel.spec.ts" timestamp="2023-12-29T14:02:40.175Z" hostname="chromium" tests="6" failures="0" skipped="0" time="17.496" errors="0">
-<testcase name="Contact Hotel › Customer must be able to contact hotel by filling up all mandatory fields @sanity" classname="tests\contactHotel.spec.ts" time="4.239">
-</testcase>
-<testcase name="Contact Hotel › Customer must NOT be able to contact hotel without filling up the Name field" classname="tests\contactHotel.spec.ts" time="3.62">
-</testcase>
-<testcase name="Contact Hotel › Customer must NOT be able to contact hotel without filling up an Email field" classname="tests\contactHotel.spec.ts" time="2.5">
-</testcase>
-<testcase name="Contact Hotel › Customer must NOT be able to contact hotel without filling up the Phone field" classname="tests\contactHotel.spec.ts" time="2.238">
-</testcase>
-<testcase name="Contact Hotel › Customer must NOT be able to contact hotel without filling up the Subject field" classname="tests\contactHotel.spec.ts" time="2.486">
-</testcase>
-<testcase name="Contact Hotel › Customer must NOT be able to contact hotel without filling up the Message field" classname="tests\contactHotel.spec.ts" time="2.413">
+<testcase name="Book a Room › Customer must NOT be able to book a room without filling up the Phone field" classname="tests\bookRoom.spec.ts" time="3.501">
 </testcase>
 </testsuite>
-<testsuite name="tests\createRoom.spec.ts" timestamp="2023-12-29T14:02:40.175Z" hostname="chromium" tests="3" failures="0" skipped="0" time="9.738" errors="0">
-<testcase name="Creating room › Admin user must be able to create new room by filling up all mandatory fields @sanity" classname="tests\createRoom.spec.ts" time="3.996">
+<testsuite name="tests\contactHotel.spec.ts" timestamp="2024-01-08T08:56:39.842Z" hostname="chromium" tests="6" failures="0" skipped="0" time="20.232" errors="0">
+<testcase name="Contact Hotel › Customer must be able to contact hotel by filling up all mandatory fields @sanity" classname="tests\contactHotel.spec.ts" time="4.559">
 </testcase>
-<testcase name="Creating room › Admin user must NOT be able to create new room with the room name empty" classname="tests\createRoom.spec.ts" time="2.971">
+<testcase name="Contact Hotel › Customer must NOT be able to contact hotel without filling up the Name field" classname="tests\contactHotel.spec.ts" time="3.597">
 </testcase>
-<testcase name="Creating room › Admin user must NOT be able to create new room with the room price less than 1" classname="tests\createRoom.spec.ts" time="2.771">
+<testcase name="Contact Hotel › Customer must NOT be able to contact hotel without filling up an Email field" classname="tests\contactHotel.spec.ts" time="3.132">
+</testcase>
+<testcase name="Contact Hotel › Customer must NOT be able to contact hotel without filling up the Phone field" classname="tests\contactHotel.spec.ts" time="2.885">
+</testcase>
+<testcase name="Contact Hotel › Customer must NOT be able to contact hotel without filling up the Subject field" classname="tests\contactHotel.spec.ts" time="3.062">
+</testcase>
+<testcase name="Contact Hotel › Customer must NOT be able to contact hotel without filling up the Message field" classname="tests\contactHotel.spec.ts" time="2.997">
 </testcase>
 </testsuite>
-<testsuite name="tests\loginToTheWebsite.spec.ts" timestamp="2023-12-29T14:02:40.175Z" hostname="chromium" tests="3" failures="0" skipped="0" time="10.781" errors="0">
-<testcase name="Login To The Website › Customer must be able to log in to the hotel website by filling up mandatory fields @sanity" classname="tests\loginToTheWebsite.spec.ts" time="5.617">
+<testsuite name="tests\createRoom.spec.ts" timestamp="2024-01-08T08:56:39.842Z" hostname="chromium" tests="3" failures="0" skipped="0" time="11.043" errors="0">
+<testcase name="Creating room › Admin user must be able to create new room by filling up all mandatory fields @sanity" classname="tests\createRoom.spec.ts" time="4.329">
 </testcase>
-<testcase name="Login To The Website › Customer must NOT be able to log in to the hotel website without filling up the username field" classname="tests\loginToTheWebsite.spec.ts" time="2.608">
+<testcase name="Creating room › Admin user must NOT be able to create new room with the room name empty" classname="tests\createRoom.spec.ts" time="3.701">
 </testcase>
-<testcase name="Login To The Website › Customer must NOT be able to log in to the hotel website without filling up the password field" classname="tests\loginToTheWebsite.spec.ts" time="2.556">
+<testcase name="Creating room › Admin user must NOT be able to create new room with the room price less than 1" classname="tests\createRoom.spec.ts" time="3.013">
+</testcase>
+</testsuite>
+<testsuite name="tests\loginToTheWebsite.spec.ts" timestamp="2024-01-08T08:56:39.842Z" hostname="chromium" tests="3" failures="0" skipped="0" time="11.485" errors="0">
+<testcase name="Login To The Website › Customer must be able to log in to the hotel website by filling up mandatory fields @sanity" classname="tests\loginToTheWebsite.spec.ts" time="5.927">
+</testcase>
+<testcase name="Login To The Website › Customer must NOT be able to log in to the hotel website without filling up the username field" classname="tests\loginToTheWebsite.spec.ts" time="2.857">
+</testcase>
+<testcase name="Login To The Website › Customer must NOT be able to log in to the hotel website without filling up the password field" classname="tests\loginToTheWebsite.spec.ts" time="2.701">
 </testcase>
 </testsuite>
 </testsuites>
