@@ -94,7 +94,7 @@
           "specs": [
             {
               "title": "Admin user must be able to create new room by filling up all mandatory fields @sanity",
-              "ok": false,
+              "ok": true,
               "tags": [
                 "sanity"
               ],
@@ -108,47 +108,17 @@
                   "results": [
                     {
                       "workerIndex": 0,
-                      "status": "failed",
-                      "duration": 1394,
-                      "error": {
-                        "message": "TypeError: Cannot read properties of undefined (reading 'check')",
-                        "stack": "TypeError: Cannot read properties of undefined (reading 'check')\n    at RoomsPage.selectRoomFeatures (c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\pages\\RoomsPage.ts:50:30)\n    at RoomsPage.createRoom (c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\pages\\RoomsPage.ts:58:16)\n    at c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\tests\\createRoom.spec.ts:37:5",
-                        "location": {
-                          "file": "c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\pages\\RoomsPage.ts",
-                          "column": 30,
-                          "line": 50
-                        },
-                        "snippet": "\u001b[90m   at \u001b[39mpages\\RoomsPage.ts:50\n\n\u001b[0m \u001b[90m 48 |\u001b[39m     \u001b[90m//await this.refreshmentsCheckbox.check({force:true})\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m     \u001b[90m//await this.safeCheckbox.check({force:true})\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 50 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mviewsCheckbox\u001b[33m.\u001b[39mcheck({force\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 51 |\u001b[39m   }\u001b[0m\n\u001b[0m \u001b[90m 52 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 53 |\u001b[39m   \u001b[36masync\u001b[39m createRoom(roomName\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m roomType\u001b[33m:\u001b[39m \u001b[33mRoomType\u001b[39m\u001b[33m,\u001b[39m roomAccessibleDropdown\u001b[33m:\u001b[39m boolean\u001b[33m,\u001b[39m roomPrice\u001b[33m:\u001b[39m number\u001b[33m,\u001b[39m roomFeatures\u001b[33m:\u001b[39m \u001b[33mRoomFeatures\u001b[39m) {\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\pages\\RoomsPage.ts",
-                            "column": 30,
-                            "line": 50
-                          },
-                          "message": "TypeError: Cannot read properties of undefined (reading 'check')\n\n\u001b[90m   at \u001b[39mpages\\RoomsPage.ts:50\n\n\u001b[0m \u001b[90m 48 |\u001b[39m     \u001b[90m//await this.refreshmentsCheckbox.check({force:true})\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m     \u001b[90m//await this.safeCheckbox.check({force:true})\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 50 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mviewsCheckbox\u001b[33m.\u001b[39mcheck({force\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 51 |\u001b[39m   }\u001b[0m\n\u001b[0m \u001b[90m 52 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 53 |\u001b[39m   \u001b[36masync\u001b[39m createRoom(roomName\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m roomType\u001b[33m:\u001b[39m \u001b[33mRoomType\u001b[39m\u001b[33m,\u001b[39m roomAccessibleDropdown\u001b[33m:\u001b[39m boolean\u001b[33m,\u001b[39m roomPrice\u001b[33m:\u001b[39m number\u001b[33m,\u001b[39m roomFeatures\u001b[33m:\u001b[39m \u001b[33mRoomFeatures\u001b[39m) {\u001b[0m\n\n\u001b[2m    at RoomsPage.selectRoomFeatures (c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\pages\\RoomsPage.ts:50:30)\u001b[22m\n\u001b[2m    at RoomsPage.createRoom (c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\pages\\RoomsPage.ts:58:16)\u001b[22m\n\u001b[2m    at c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\tests\\createRoom.spec.ts:37:5\u001b[22m"
-                        }
-                      ],
+                      "status": "passed",
+                      "duration": 3969,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-01-09T10:46:43.921Z",
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\test-results\\tests-createRoom-Creating-room-Admin-user-must-26535--room-by-filling-up-all-mandatory-fields-sanity-chromium\\test-failed-1.png"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\pages\\RoomsPage.ts",
-                        "column": 30,
-                        "line": 50
-                      }
+                      "startTime": "2024-01-09T12:31:30.696Z",
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "id": "75d87f9741b085816523-f9f801594bbc907d7f13",
@@ -163,11 +133,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-01-09T10:46:37.408Z",
-    "duration": 8034.707999999999,
-    "expected": 0,
+    "startTime": "2024-01-09T12:31:17.410Z",
+    "duration": 19255.335,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }
