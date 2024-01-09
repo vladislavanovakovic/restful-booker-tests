@@ -3,6 +3,8 @@ name: Playwright tests
   push:
     branches:
       - main
+  workflow_dispatch:
+
 jobs:
   test:
     name: Playwright Tests

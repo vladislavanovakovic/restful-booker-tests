@@ -37,13 +37,11 @@ export class RoomsPage extends BasePage {
   async selectRoomType(type: RoomType) {
     await this.roomTypeDropdown.selectOption(type)
   }
-  async selectRoomFeatures(amenities: RoomFeatures) {
-    await this.wifiCheckbox.check()
-    /*await this.tvCheckbox.check()
-    await this.radioCheckbox.check()
-    await this.refreshmentsCheckbox.check()
-    await this.safeCheckbox.check()
-    await this.viewsCheckbox.check()*/
+  async selectRoomFeatures(features: RoomFeatures) {
+    if (features.wifi) await this.wifiCheckbox.check({force:true})
+    else await this.wifiCheckbox.uncheck()
+    //if (features.tv) await this.tvCheckbox.check({force:true})
+    //else await this.tvCheckbox.uncheck();
   }
 
   async createRoom(roomName: string, roomType: RoomType, roomAccessibleDropdown: boolean, roomPrice: number, roomFeatures: RoomFeatures) {

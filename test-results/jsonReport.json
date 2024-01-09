@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "C:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\playwright.config.ts",
-    "rootDir": "C:/Users/vl.novakovic/Documents/repos/restful-booker-tests",
+    "configFile": "c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\playwright.config.ts",
+    "rootDir": "c:/Users/vl.novakovic/Documents/repos/restful-booker-tests",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 4
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "reporter": [
@@ -28,11 +28,11 @@
         }
       ],
       [
-        "C:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\node_modules\\allure-playwright\\dist\\index.js",
+        "c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\node_modules\\allure-playwright\\dist\\index.js",
         null
       ],
       [
-        "C:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\node_modules\\monocart-reporter\\lib\\index.js",
+        "c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\node_modules\\monocart-reporter\\lib\\index.js",
         {
           "name": "Monokart Report",
           "outputFile": "./test-results/monokartReport.html"
@@ -46,12 +46,12 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "C:/Users/vl.novakovic/Documents/repos/restful-booker-tests/test-results",
+        "outputDir": "c:/Users/vl.novakovic/Documents/repos/restful-booker-tests/test-results",
         "repeatEach": 1,
         "retries": 0,
         "id": "chromium",
         "name": "chromium",
-        "testDir": "C:/Users/vl.novakovic/Documents/repos/restful-booker-tests",
+        "testDir": "c:/Users/vl.novakovic/Documents/repos/restful-booker-tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -59,12 +59,12 @@
         "timeout": 60000
       },
       {
-        "outputDir": "C:/Users/vl.novakovic/Documents/repos/restful-booker-tests/test-results",
+        "outputDir": "c:/Users/vl.novakovic/Documents/repos/restful-booker-tests/test-results",
         "repeatEach": 1,
         "retries": 0,
         "id": "firefox",
         "name": "firefox",
-        "testDir": "C:/Users/vl.novakovic/Documents/repos/restful-booker-tests",
+        "testDir": "c:/Users/vl.novakovic/Documents/repos/restful-booker-tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -75,631 +75,10 @@
     "shard": null,
     "updateSnapshots": "missing",
     "version": "1.40.1",
-    "workers": 4,
+    "workers": 1,
     "webServer": null
   },
   "suites": [
-    {
-      "title": "tests\\bookRoom.spec.ts",
-      "file": "tests/bookRoom.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "Book a Room",
-          "file": "tests/bookRoom.spec.ts",
-          "line": 13,
-          "column": 6,
-          "specs": [
-            {
-              "title": "Customer must be able to book a room by filling up mandatory fields @sanity",
-              "ok": true,
-              "tags": [
-                "sanity"
-              ],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 5448,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-01-09T09:57:25.005Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 4,
-                      "status": "passed",
-                      "duration": 7857,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-01-09T09:57:42.049Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "8c9cf7451491efc23e09-a5c1615b2b52c256c0b3",
-              "file": "tests/bookRoom.spec.ts",
-              "line": 40,
-              "column": 7
-            },
-            {
-              "title": "Customer must NOT be able to book a room without filling up the First name field",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 4130,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-01-09T09:57:32.718Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 4,
-                      "status": "passed",
-                      "duration": 6009,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-01-09T09:57:53.623Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "8c9cf7451491efc23e09-81455ddb78dc1559850e",
-              "file": "tests/bookRoom.spec.ts",
-              "line": 53,
-              "column": 7
-            },
-            {
-              "title": "Customer must NOT be able to book a room without filling up the Last name field",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 4354,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-01-09T09:57:36.852Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 4,
-                      "status": "passed",
-                      "duration": 5776,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-01-09T09:57:59.635Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "8c9cf7451491efc23e09-d15da26a708d77b940ab",
-              "file": "tests/bookRoom.spec.ts",
-              "line": 65,
-              "column": 7
-            },
-            {
-              "title": "Customer must NOT be able to book a room without filling up the Email field",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 3961,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-01-09T09:57:41.209Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 4,
-                      "status": "passed",
-                      "duration": 7135,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-01-09T09:58:05.415Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "8c9cf7451491efc23e09-be456c63178d4c6ff0c8",
-              "file": "tests/bookRoom.spec.ts",
-              "line": 77,
-              "column": 7
-            },
-            {
-              "title": "Customer must NOT be able to book a room without filling up the Phone field",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 4006,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-01-09T09:57:45.172Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 4,
-                      "status": "passed",
-                      "duration": 5583,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-01-09T09:58:12.553Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "8c9cf7451491efc23e09-8d522f3143e5d2b41561",
-              "file": "tests/bookRoom.spec.ts",
-              "line": 87,
-              "column": 7
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "tests\\contactHotel.spec.ts",
-      "file": "tests/contactHotel.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "Contact Hotel",
-          "file": "tests/contactHotel.spec.ts",
-          "line": 11,
-          "column": 6,
-          "specs": [
-            {
-              "title": "Customer must be able to contact hotel by filling up all mandatory fields @sanity",
-              "ok": true,
-              "tags": [
-                "sanity"
-              ],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "status": "passed",
-                      "duration": 4620,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-01-09T09:57:24.860Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 5,
-                      "status": "passed",
-                      "duration": 7077,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-01-09T09:57:48.083Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "d4c6294d0916d404c5fc-589c8eae50ecce895723",
-              "file": "tests/contactHotel.spec.ts",
-              "line": 21,
-              "column": 7
-            },
-            {
-              "title": "Customer must NOT be able to contact hotel without filling up the Name field",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "status": "passed",
-                      "duration": 3093,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-01-09T09:57:31.632Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 5,
-                      "status": "passed",
-                      "duration": 3491,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-01-09T09:57:58.864Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "d4c6294d0916d404c5fc-eb9880d8c6a95bbc936c",
-              "file": "tests/contactHotel.spec.ts",
-              "line": 28,
-              "column": 7
-            },
-            {
-              "title": "Customer must NOT be able to contact hotel without filling up an Email field",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "status": "passed",
-                      "duration": 3015,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-01-09T09:57:34.729Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 5,
-                      "status": "passed",
-                      "duration": 3473,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-01-09T09:58:02.358Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "d4c6294d0916d404c5fc-632a8e1074699774b9a5",
-              "file": "tests/contactHotel.spec.ts",
-              "line": 36,
-              "column": 7
-            },
-            {
-              "title": "Customer must NOT be able to contact hotel without filling up the Phone field",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "status": "passed",
-                      "duration": 3145,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-01-09T09:57:37.747Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 5,
-                      "status": "passed",
-                      "duration": 5444,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-01-09T09:58:05.834Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "d4c6294d0916d404c5fc-91e449dfa603b22b11e4",
-              "file": "tests/contactHotel.spec.ts",
-              "line": 44,
-              "column": 7
-            },
-            {
-              "title": "Customer must NOT be able to contact hotel without filling up the Subject field",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "status": "passed",
-                      "duration": 2910,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-01-09T09:57:40.895Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 5,
-                      "status": "passed",
-                      "duration": 3943,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-01-09T09:58:11.281Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "d4c6294d0916d404c5fc-4ed93d59675f6a0cb356",
-              "file": "tests/contactHotel.spec.ts",
-              "line": 54,
-              "column": 7
-            },
-            {
-              "title": "Customer must NOT be able to contact hotel without filling up the Message field",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "status": "passed",
-                      "duration": 2891,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-01-09T09:57:43.808Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 5,
-                      "status": "passed",
-                      "duration": 3291,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-01-09T09:58:15.228Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "d4c6294d0916d404c5fc-c537d8186286ae4165d1",
-              "file": "tests/contactHotel.spec.ts",
-              "line": 64,
-              "column": 7
-            }
-          ]
-        }
-      ]
-    },
     {
       "title": "tests\\createRoom.spec.ts",
       "file": "tests/createRoom.spec.ts",
@@ -715,7 +94,7 @@
           "specs": [
             {
               "title": "Admin user must be able to create new room by filling up all mandatory fields @sanity",
-              "ok": true,
+              "ok": false,
               "tags": [
                 "sanity"
               ],
@@ -728,328 +107,53 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "status": "passed",
-                      "duration": 4203,
-                      "errors": [],
+                      "workerIndex": 0,
+                      "status": "failed",
+                      "duration": 1394,
+                      "error": {
+                        "message": "TypeError: Cannot read properties of undefined (reading 'check')",
+                        "stack": "TypeError: Cannot read properties of undefined (reading 'check')\n    at RoomsPage.selectRoomFeatures (c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\pages\\RoomsPage.ts:50:30)\n    at RoomsPage.createRoom (c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\pages\\RoomsPage.ts:58:16)\n    at c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\tests\\createRoom.spec.ts:37:5",
+                        "location": {
+                          "file": "c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\pages\\RoomsPage.ts",
+                          "column": 30,
+                          "line": 50
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39mpages\\RoomsPage.ts:50\n\n\u001b[0m \u001b[90m 48 |\u001b[39m     \u001b[90m//await this.refreshmentsCheckbox.check({force:true})\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m     \u001b[90m//await this.safeCheckbox.check({force:true})\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 50 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mviewsCheckbox\u001b[33m.\u001b[39mcheck({force\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 51 |\u001b[39m   }\u001b[0m\n\u001b[0m \u001b[90m 52 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 53 |\u001b[39m   \u001b[36masync\u001b[39m createRoom(roomName\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m roomType\u001b[33m:\u001b[39m \u001b[33mRoomType\u001b[39m\u001b[33m,\u001b[39m roomAccessibleDropdown\u001b[33m:\u001b[39m boolean\u001b[33m,\u001b[39m roomPrice\u001b[33m:\u001b[39m number\u001b[33m,\u001b[39m roomFeatures\u001b[33m:\u001b[39m \u001b[33mRoomFeatures\u001b[39m) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\pages\\RoomsPage.ts",
+                            "column": 30,
+                            "line": 50
+                          },
+                          "message": "TypeError: Cannot read properties of undefined (reading 'check')\n\n\u001b[90m   at \u001b[39mpages\\RoomsPage.ts:50\n\n\u001b[0m \u001b[90m 48 |\u001b[39m     \u001b[90m//await this.refreshmentsCheckbox.check({force:true})\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m     \u001b[90m//await this.safeCheckbox.check({force:true})\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 50 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mviewsCheckbox\u001b[33m.\u001b[39mcheck({force\u001b[33m:\u001b[39m\u001b[36mtrue\u001b[39m})\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 51 |\u001b[39m   }\u001b[0m\n\u001b[0m \u001b[90m 52 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 53 |\u001b[39m   \u001b[36masync\u001b[39m createRoom(roomName\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m roomType\u001b[33m:\u001b[39m \u001b[33mRoomType\u001b[39m\u001b[33m,\u001b[39m roomAccessibleDropdown\u001b[33m:\u001b[39m boolean\u001b[33m,\u001b[39m roomPrice\u001b[33m:\u001b[39m number\u001b[33m,\u001b[39m roomFeatures\u001b[33m:\u001b[39m \u001b[33mRoomFeatures\u001b[39m) {\u001b[0m\n\n\u001b[2m    at RoomsPage.selectRoomFeatures (c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\pages\\RoomsPage.ts:50:30)\u001b[22m\n\u001b[2m    at RoomsPage.createRoom (c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\pages\\RoomsPage.ts:58:16)\u001b[22m\n\u001b[2m    at c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\tests\\createRoom.spec.ts:37:5\u001b[22m"
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-01-09T09:57:24.955Z",
-                      "attachments": []
+                      "startTime": "2024-01-09T10:46:43.921Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\test-results\\tests-createRoom-Creating-room-Admin-user-must-26535--room-by-filling-up-all-mandatory-fields-sanity-chromium\\test-failed-1.png"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\pages\\RoomsPage.ts",
+                        "column": 30,
+                        "line": 50
+                      }
                     }
                   ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 6,
-                      "status": "passed",
-                      "duration": 9922,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-01-09T09:57:58.473Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "75d87f9741b085816523-f9f801594bbc907d7f13",
               "file": "tests/createRoom.spec.ts",
               "line": 36,
-              "column": 7
-            },
-            {
-              "title": "Admin user must NOT be able to create new room with the room name empty",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "status": "passed",
-                      "duration": 3207,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-01-09T09:57:31.449Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 6,
-                      "status": "passed",
-                      "duration": 4260,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-01-09T09:58:13.163Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "75d87f9741b085816523-2cbd467a3d6273939d8f",
-              "file": "tests/createRoom.spec.ts",
-              "line": 41,
-              "column": 7
-            },
-            {
-              "title": "Admin user must NOT be able to create new room with the room price less than 1",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "status": "passed",
-                      "duration": 3065,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-01-09T09:57:34.659Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 6,
-                      "status": "passed",
-                      "duration": 2959,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-01-09T09:58:17.426Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "75d87f9741b085816523-6eeb1c743a59b5f4c5fa",
-              "file": "tests/createRoom.spec.ts",
-              "line": 48,
-              "column": 7
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "tests\\loginToTheWebsite.spec.ts",
-      "file": "tests/loginToTheWebsite.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "Login To The Website",
-          "file": "tests/loginToTheWebsite.spec.ts",
-          "line": 4,
-          "column": 6,
-          "specs": [
-            {
-              "title": "Customer must be able to log in to the hotel website by filling up mandatory fields @sanity",
-              "ok": true,
-              "tags": [
-                "sanity"
-              ],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "status": "passed",
-                      "duration": 7045,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-01-09T09:57:17.784Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 7,
-                      "status": "passed",
-                      "duration": 7222,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-01-09T09:57:51.127Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "50ecc232c8fc90ecef5b-10ba1bc0af14803292ad",
-              "file": "tests/loginToTheWebsite.spec.ts",
-              "line": 12,
-              "column": 7
-            },
-            {
-              "title": "Customer must NOT be able to log in to the hotel website without filling up the username field",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "status": "passed",
-                      "duration": 2805,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-01-09T09:57:26.163Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 7,
-                      "status": "passed",
-                      "duration": 3310,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-01-09T09:58:01.831Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "50ecc232c8fc90ecef5b-bf12eafb1058e5233d2f",
-              "file": "tests/loginToTheWebsite.spec.ts",
-              "line": 18,
-              "column": 7
-            },
-            {
-              "title": "Customer must NOT be able to log in to the hotel website without filling up the password field",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "status": "passed",
-                      "duration": 2680,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-01-09T09:57:28.973Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 7,
-                      "status": "passed",
-                      "duration": 4790,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-01-09T09:58:05.145Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "50ecc232c8fc90ecef5b-c8b925b3bd80e53f3774",
-              "file": "tests/loginToTheWebsite.spec.ts",
-              "line": 23,
               "column": 7
             }
           ]
@@ -1059,11 +163,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-01-09T09:57:14.098Z",
-    "duration": 67256.893,
-    "expected": 34,
+    "startTime": "2024-01-09T10:46:37.408Z",
+    "duration": 8034.707999999999,
+    "expected": 0,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }
