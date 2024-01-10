@@ -6,6 +6,7 @@ const config: PlaywrightTestConfig = {
   reporter: [
     ['list'],
     ['line'],
+    ['html', { open: 'on-failure' }],
     ['json', {outputFile: 'test-results/jsonReport.json'}],
     ['junit', {outputFile: 'test-results/junitReport.xml'}],
     ['allure-playwright'],
