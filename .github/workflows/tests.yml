@@ -45,3 +45,11 @@ jobs:
           name: playwright-allure-results
           path: allure-results/
           retention-days: 1
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: reports/
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
