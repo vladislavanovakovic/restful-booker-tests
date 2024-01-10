@@ -1,6 +1,1082 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="13.267869">
-<testsuite name="tests\createRoom.spec.ts" timestamp="2024-01-09T12:31:23.407Z" hostname="chromium" tests="1" failures="0" skipped="0" time="3.969" errors="0">
-<testcase name="Creating room › Admin user must be able to create new room by filling up all mandatory fields @sanity" classname="tests\createRoom.spec.ts" time="3.969">
+<testsuites id="" name="" tests="34" failures="4" skipped="0" errors="0" time="89.96766799999999">
+<testsuite name="tests\bookRoom.spec.ts" timestamp="2024-01-10T09:00:11.857Z" hostname="chromium" tests="5" failures="3" skipped="0" time="61.938" errors="0">
+<testcase name="Book a Room › Customer must be able to book a room by filling up mandatory fields @sanity" classname="tests\bookRoom.spec.ts" time="19.564">
+<failure message="bookRoom.spec.ts:40:7 Customer must be able to book a room by filling up mandatory fields @sanity" type="FAILURE">
+<![CDATA[  [chromium] › tests\bookRoom.spec.ts:40:7 › Book a Room › Customer must be able to book a room by filling up mandatory fields @sanity 
+
+    Error: locator.hover: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('.rbc-day-bg:not(.rbc-off-range-bg)').last()
+      -   locator resolved to <div class="rbc-day-bg"></div>
+      - attempting hover action
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #1
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #2
+      -   waiting 20ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #3
+      -   waiting 100ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #4
+      -   waiting 100ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #5
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #6
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #7
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #8
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #9
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #10
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #11
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #12
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #13
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #14
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #15
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #16
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #17
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #18
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #19
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #20
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #21
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #22
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #23
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #24
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #25
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #26
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #27
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #28
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #29
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #30
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #31
+      -   waiting 500ms
+
+
+       at pages\FrontPage.ts:76
+
+      74 |     await calendarStartDate.hover()
+      75 |     await this.page.mouse.down()
+    > 76 |     await calendarEndDate.hover()
+         |                           ^
+      77 |     await this.page.mouse.up()
+      78 |   }
+      79 |   async clickBookButton() {
+
+        at FrontPage.selectAvailableDates (C:\Users\vl.novakovic\Documents\repos\restful-booker-tests\pages\FrontPage.ts:76:27)
+        at C:\Users\vl.novakovic\Documents\repos\restful-booker-tests\tests\bookRoom.spec.ts:43:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\tests-bookRoom-Book-a-Room-Customer-must-be-ab-10e3f-ok-a-room-by-filling-up-mandatory-fields-sanity-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|tests-bookRoom-Book-a-Room-Customer-must-be-ab-10e3f-ok-a-room-by-filling-up-mandatory-fields-sanity-chromium\test-failed-1.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Book a Room › Customer must NOT be able to book a room without filling up the First name field" classname="tests\bookRoom.spec.ts" time="4.35">
+</testcase>
+<testcase name="Book a Room › Customer must NOT be able to book a room without filling up the Last name field" classname="tests\bookRoom.spec.ts" time="18.542">
+<failure message="bookRoom.spec.ts:65:7 Customer must NOT be able to book a room without filling up the Last name field" type="FAILURE">
+<![CDATA[  [chromium] › tests\bookRoom.spec.ts:65:7 › Book a Room › Customer must NOT be able to book a room without filling up the Last name field 
+
+    Error: locator.hover: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('.rbc-day-bg:not(.rbc-off-range-bg)').last()
+      -   locator resolved to <div class="rbc-day-bg"></div>
+      - attempting hover action
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #1
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #2
+      -   waiting 20ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #3
+      -   waiting 100ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #4
+      -   waiting 100ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #5
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #6
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #7
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #8
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #9
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #10
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #11
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #12
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #13
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #14
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #15
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #16
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #17
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #18
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #19
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #20
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #21
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #22
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #23
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #24
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #25
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #26
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #27
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #28
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #29
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #30
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #31
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #32
+      -   waiting 500ms
+
+
+       at pages\FrontPage.ts:76
+
+      74 |     await calendarStartDate.hover()
+      75 |     await this.page.mouse.down()
+    > 76 |     await calendarEndDate.hover()
+         |                           ^
+      77 |     await this.page.mouse.up()
+      78 |   }
+      79 |   async clickBookButton() {
+
+        at FrontPage.selectAvailableDates (C:\Users\vl.novakovic\Documents\repos\restful-booker-tests\pages\FrontPage.ts:76:27)
+        at C:\Users\vl.novakovic\Documents\repos\restful-booker-tests\tests\bookRoom.spec.ts:68:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\tests-bookRoom-Book-a-Room-Customer-must-NOT-b-4c430-k-a-room-without-filling-up-the-Last-name-field-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|tests-bookRoom-Book-a-Room-Customer-must-NOT-b-4c430-k-a-room-without-filling-up-the-Last-name-field-chromium\test-failed-1.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Book a Room › Customer must NOT be able to book a room without filling up the Email field" classname="tests\bookRoom.spec.ts" time="2.445">
+</testcase>
+<testcase name="Book a Room › Customer must NOT be able to book a room without filling up the Phone field" classname="tests\bookRoom.spec.ts" time="17.037">
+<failure message="bookRoom.spec.ts:87:7 Customer must NOT be able to book a room without filling up the Phone field" type="FAILURE">
+<![CDATA[  [chromium] › tests\bookRoom.spec.ts:87:7 › Book a Room › Customer must NOT be able to book a room without filling up the Phone field 
+
+    Error: locator.hover: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('.rbc-day-bg:not(.rbc-off-range-bg)').last()
+      -   locator resolved to <div class="rbc-day-bg"></div>
+      - attempting hover action
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #1
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #2
+      -   waiting 20ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #3
+      -   waiting 100ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #4
+      -   waiting 100ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #5
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #6
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #7
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #8
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #9
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #10
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #11
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #12
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #13
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #14
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #15
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #16
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #17
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #18
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #19
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #20
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #21
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #22
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #23
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #24
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #25
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #26
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #27
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #28
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #29
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #30
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #31
+      -   waiting 500ms
+
+
+       at pages\FrontPage.ts:76
+
+      74 |     await calendarStartDate.hover()
+      75 |     await this.page.mouse.down()
+    > 76 |     await calendarEndDate.hover()
+         |                           ^
+      77 |     await this.page.mouse.up()
+      78 |   }
+      79 |   async clickBookButton() {
+
+        at FrontPage.selectAvailableDates (C:\Users\vl.novakovic\Documents\repos\restful-booker-tests\pages\FrontPage.ts:76:27)
+        at C:\Users\vl.novakovic\Documents\repos\restful-booker-tests\tests\bookRoom.spec.ts:90:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\tests-bookRoom-Book-a-Room-Customer-must-NOT-b-2ff42--book-a-room-without-filling-up-the-Phone-field-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|tests-bookRoom-Book-a-Room-Customer-must-NOT-b-2ff42--book-a-room-without-filling-up-the-Phone-field-chromium\test-failed-1.png]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="tests\contactHotel.spec.ts" timestamp="2024-01-10T09:00:11.857Z" hostname="chromium" tests="6" failures="0" skipped="0" time="16.561" errors="0">
+<testcase name="Contact Hotel › Customer must be able to contact hotel by filling up all mandatory fields @sanity" classname="tests\contactHotel.spec.ts" time="3.901">
+</testcase>
+<testcase name="Contact Hotel › Customer must NOT be able to contact hotel without filling up the Name field" classname="tests\contactHotel.spec.ts" time="2.607">
+</testcase>
+<testcase name="Contact Hotel › Customer must NOT be able to contact hotel without filling up an Email field" classname="tests\contactHotel.spec.ts" time="2.38">
+</testcase>
+<testcase name="Contact Hotel › Customer must NOT be able to contact hotel without filling up the Phone field" classname="tests\contactHotel.spec.ts" time="2.521">
+</testcase>
+<testcase name="Contact Hotel › Customer must NOT be able to contact hotel without filling up the Subject field" classname="tests\contactHotel.spec.ts" time="2.502">
+</testcase>
+<testcase name="Contact Hotel › Customer must NOT be able to contact hotel without filling up the Message field" classname="tests\contactHotel.spec.ts" time="2.65">
+</testcase>
+</testsuite>
+<testsuite name="tests\createRoom.spec.ts" timestamp="2024-01-10T09:00:11.857Z" hostname="chromium" tests="3" failures="0" skipped="0" time="8.995" errors="0">
+<testcase name="Creating room › Admin user must be able to create new room by filling up all mandatory fields @sanity" classname="tests\createRoom.spec.ts" time="4.046">
+</testcase>
+<testcase name="Creating room › Admin user must NOT be able to create new room with the room name empty" classname="tests\createRoom.spec.ts" time="2.491">
+</testcase>
+<testcase name="Creating room › Admin user must NOT be able to create new room with the room price less than 1" classname="tests\createRoom.spec.ts" time="2.458">
+</testcase>
+</testsuite>
+<testsuite name="tests\loginToTheWebsite.spec.ts" timestamp="2024-01-10T09:00:11.857Z" hostname="chromium" tests="3" failures="0" skipped="0" time="8.542" errors="0">
+<testcase name="Login To The Website › Customer must be able to log in to the hotel website by filling up mandatory fields @sanity" classname="tests\loginToTheWebsite.spec.ts" time="3.065">
+</testcase>
+<testcase name="Login To The Website › Customer must NOT be able to log in to the hotel website without filling up the username field" classname="tests\loginToTheWebsite.spec.ts" time="2.334">
+</testcase>
+<testcase name="Login To The Website › Customer must NOT be able to log in to the hotel website without filling up the password field" classname="tests\loginToTheWebsite.spec.ts" time="3.143">
+</testcase>
+</testsuite>
+<testsuite name="tests\bookRoom.spec.ts" timestamp="2024-01-10T09:00:11.857Z" hostname="firefox" tests="5" failures="1" skipped="0" time="36.405" errors="0">
+<testcase name="Book a Room › Customer must be able to book a room by filling up mandatory fields @sanity" classname="tests\bookRoom.spec.ts" time="6.282">
+</testcase>
+<testcase name="Book a Room › Customer must NOT be able to book a room without filling up the First name field" classname="tests\bookRoom.spec.ts" time="4.221">
+</testcase>
+<testcase name="Book a Room › Customer must NOT be able to book a room without filling up the Last name field" classname="tests\bookRoom.spec.ts" time="19.165">
+<failure message="bookRoom.spec.ts:65:7 Customer must NOT be able to book a room without filling up the Last name field" type="FAILURE">
+<![CDATA[  [firefox] › tests\bookRoom.spec.ts:65:7 › Book a Room › Customer must NOT be able to book a room without filling up the Last name field 
+
+    Error: locator.hover: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('.rbc-day-bg:not(.rbc-off-range-bg)').last()
+      -   locator resolved to <div class="rbc-day-bg"></div>
+      - attempting hover action
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #1
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #2
+      -   waiting 20ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #3
+      -   waiting 100ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #4
+      -   waiting 100ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #5
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #6
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #7
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #8
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #9
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #10
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #11
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #12
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #13
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #14
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #15
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #16
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #17
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #18
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #19
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #20
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #21
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #22
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #23
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #24
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #25
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #26
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #27
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #28
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #29
+      -   waiting 500ms
+      -   waiting for element to be visible and stable
+      -   element is visible and stable
+      -   scrolling into view if needed
+      -   done scrolling
+      -   <div title="Unavailable" class="rbc-event-content">Unavailable</div> from <div role="row" class="rbc-row-content">…</div> subtree intercepts pointer events
+      - retrying hover action, attempt #30
+      -   waiting 500ms
+
+
+       at pages\FrontPage.ts:76
+
+      74 |     await calendarStartDate.hover()
+      75 |     await this.page.mouse.down()
+    > 76 |     await calendarEndDate.hover()
+         |                           ^
+      77 |     await this.page.mouse.up()
+      78 |   }
+      79 |   async clickBookButton() {
+
+        at FrontPage.selectAvailableDates (C:\Users\vl.novakovic\Documents\repos\restful-booker-tests\pages\FrontPage.ts:76:27)
+        at C:\Users\vl.novakovic\Documents\repos\restful-booker-tests\tests\bookRoom.spec.ts:68:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\tests-bookRoom-Book-a-Room-Customer-must-NOT-b-4c430-k-a-room-without-filling-up-the-Last-name-field-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|tests-bookRoom-Book-a-Room-Customer-must-NOT-b-4c430-k-a-room-without-filling-up-the-Last-name-field-firefox\test-failed-1.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Book a Room › Customer must NOT be able to book a room without filling up the Email field" classname="tests\bookRoom.spec.ts" time="4.091">
+</testcase>
+<testcase name="Book a Room › Customer must NOT be able to book a room without filling up the Phone field" classname="tests\bookRoom.spec.ts" time="2.646">
+</testcase>
+</testsuite>
+<testsuite name="tests\contactHotel.spec.ts" timestamp="2024-01-10T09:00:11.857Z" hostname="firefox" tests="6" failures="0" skipped="0" time="19.054" errors="0">
+<testcase name="Contact Hotel › Customer must be able to contact hotel by filling up all mandatory fields @sanity" classname="tests\contactHotel.spec.ts" time="5.333">
+</testcase>
+<testcase name="Contact Hotel › Customer must NOT be able to contact hotel without filling up the Name field" classname="tests\contactHotel.spec.ts" time="2.608">
+</testcase>
+<testcase name="Contact Hotel › Customer must NOT be able to contact hotel without filling up an Email field" classname="tests\contactHotel.spec.ts" time="2.617">
+</testcase>
+<testcase name="Contact Hotel › Customer must NOT be able to contact hotel without filling up the Phone field" classname="tests\contactHotel.spec.ts" time="3.067">
+</testcase>
+<testcase name="Contact Hotel › Customer must NOT be able to contact hotel without filling up the Subject field" classname="tests\contactHotel.spec.ts" time="2.929">
+</testcase>
+<testcase name="Contact Hotel › Customer must NOT be able to contact hotel without filling up the Message field" classname="tests\contactHotel.spec.ts" time="2.5">
+</testcase>
+</testsuite>
+<testsuite name="tests\createRoom.spec.ts" timestamp="2024-01-10T09:00:11.857Z" hostname="firefox" tests="3" failures="0" skipped="0" time="11.136" errors="0">
+<testcase name="Creating room › Admin user must be able to create new room by filling up all mandatory fields @sanity" classname="tests\createRoom.spec.ts" time="5.877">
+</testcase>
+<testcase name="Creating room › Admin user must NOT be able to create new room with the room name empty" classname="tests\createRoom.spec.ts" time="2.921">
+</testcase>
+<testcase name="Creating room › Admin user must NOT be able to create new room with the room price less than 1" classname="tests\createRoom.spec.ts" time="2.338">
+</testcase>
+</testsuite>
+<testsuite name="tests\loginToTheWebsite.spec.ts" timestamp="2024-01-10T09:00:11.857Z" hostname="firefox" tests="3" failures="0" skipped="0" time="4.773" errors="0">
+<testcase name="Login To The Website › Customer must be able to log in to the hotel website by filling up mandatory fields @sanity" classname="tests\loginToTheWebsite.spec.ts" time="1.781">
+</testcase>
+<testcase name="Login To The Website › Customer must NOT be able to log in to the hotel website without filling up the username field" classname="tests\loginToTheWebsite.spec.ts" time="1.652">
+</testcase>
+<testcase name="Login To The Website › Customer must NOT be able to log in to the hotel website without filling up the password field" classname="tests\loginToTheWebsite.spec.ts" time="1.34">
 </testcase>
 </testsuite>
 </testsuites>
