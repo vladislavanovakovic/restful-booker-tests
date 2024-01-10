@@ -4,6 +4,8 @@ const config: PlaywrightTestConfig = {
   timeout: 60000,
   retries: 0,
   reporter: [
+    ['list'],
+    ['line'],
     ['json', {outputFile: 'test-results/jsonReport.json'}],
     ['junit', {outputFile: 'test-results/junitReport.xml'}],
     ['allure-playwright'],
