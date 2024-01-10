@@ -24,7 +24,8 @@ const config: PlaywrightTestConfig = {
     actionTimeout: 15000,
     ignoreHTTPSErrors: true,
     video: 'off',
-    screenshot: 'only-on-failure'
+    screenshot: 'only-on-failure',
+    trace: 'retain-on-failure'
   },
   projects: [
     {
