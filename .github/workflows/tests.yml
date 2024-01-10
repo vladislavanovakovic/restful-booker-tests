@@ -36,12 +36,12 @@ jobs:
         if: always()
         with:
           name: monocart-report
-          path: playwright-monocart-report
+          path: test-results
           retention-days: 1
       - name: Upload Playwright Allure Results
         uses: actions/upload-artifact@v4
         if: always()
         with:
           name: playwright-allure-results
-          path: playwright-allure-results/
+          path: allure-results/
           retention-days: 1
