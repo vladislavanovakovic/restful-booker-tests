@@ -3,8 +3,7 @@ name: Playwright tests
   push:
     branches:
       - main
-  workflow_dispatch:
-
+  workflow_dispatch: null
 jobs:
   test:
     name: Playwright Tests
@@ -19,13 +18,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Install Playwright Browsers
-        run: npx playwright install --with-deps      
+        run: npx playwright install --with-deps
       - name: Install Playwright System Dependencies
         run: npx playwright install-deps
       - name: Run Playwright Tests
-        run: npx playwright test --trace on
+        run: npx playwright test
       - name: Upload Playwright HTML Report
-        id: upload-playwright-html-report
         uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -33,4 +31,17 @@ jobs:
           path: playwright-report/
           if-no-files-found: ignore
           retention-days: 1
-      
+      - name: Upload Playwright Monocart Report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: monocart-report
+          path: playwright-monocart-report
+          retention-days: 1
+      - name: Upload Playwright Allure Results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: playwright-allure-results
+          path: playwright-allure-results/
+          retention-days: 1
