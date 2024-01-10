@@ -1,55 +1,44 @@
-<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="14.260988000000001">
-<testsuite name="tests\contactHotel.spec.ts" timestamp="2024-01-10T10:18:41.214Z" hostname="chromium" tests="1" failures="1" skipped="0" time="10.143" errors="0">
-<testcase name="Contact Hotel › Customer must NOT be able to contact hotel without filling up the Subject field" classname="tests\contactHotel.spec.ts" time="10.143">
-<failure message="contactHotel.spec.ts:54:7 Customer must NOT be able to contact hotel without filling up the Subject field" type="FAILURE">
-<![CDATA[  [chromium] › tests\contactHotel.spec.ts:54:7 › Contact Hotel › Customer must NOT be able to contact hotel without filling up the Subject field 
-
-    Error: Timed out 5000ms waiting for expect(locator).toContainText(expected)
-
-    Locator: locator('div.contact .alert.alert-danger')
-    Expected string: "Subject may not be blank1"
-    Received string: "Subject may not be blankSubject must be between 5 and 100 characters."
-    Call log:
-      - expect.toContainText with timeout 5000ms
-      - waiting for locator('div.contact .alert.alert-danger')
-      -   locator resolved to <div class="alert alert-danger">…</div>
-      -   unexpected value "Subject may not be blankSubject must be between 5 and 100 characters."
-      -   locator resolved to <div class="alert alert-danger">…</div>
-      -   unexpected value "Subject may not be blankSubject must be between 5 and 100 characters."
-      -   locator resolved to <div class="alert alert-danger">…</div>
-      -   unexpected value "Subject may not be blankSubject must be between 5 and 100 characters."
-      -   locator resolved to <div class="alert alert-danger">…</div>
-      -   unexpected value "Subject may not be blankSubject must be between 5 and 100 characters."
-      -   locator resolved to <div class="alert alert-danger">…</div>
-      -   unexpected value "Subject may not be blankSubject must be between 5 and 100 characters."
-      -   locator resolved to <div class="alert alert-danger">…</div>
-      -   unexpected value "Subject may not be blankSubject must be between 5 and 100 characters."
-      -   locator resolved to <div class="alert alert-danger">…</div>
-      -   unexpected value "Subject may not be blankSubject must be between 5 and 100 characters."
-      -   locator resolved to <div class="alert alert-danger">…</div>
-      -   unexpected value "Subject may not be blankSubject must be between 5 and 100 characters."
-      -   locator resolved to <div class="alert alert-danger">…</div>
-      -   unexpected value "Subject may not be blankSubject must be between 5 and 100 characters."
-
-
-      59 |     const validationMessage = 'Subject may not be blank1'
-      60 |     await expect(frontPage.contactFormErrorMessage).toContainText(errorMessage)
-    > 61 |     await expect(frontPage.contactFormErrorMessage).toContainText(validationMessage)
-         |                                                     ^
-      62 |
-      63 |   })
-      64 |   test('Customer must NOT be able to contact hotel without filling up the Message field', async ({ page }) => {
-
-        at c:\Users\vl.novakovic\Documents\repos\restful-booker-tests\tests\contactHotel.spec.ts:61:53
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results\tests-contactHotel-Contact-Hotel-Customer-must-f7fe6-tact-hotel-without-filling-up-the-Subject-field-chromium\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
+<testsuites id="" name="" tests="6" failures="0" skipped="0" errors="0" time="27.469434">
+<testsuite name="tests\contactHotel.spec.ts" timestamp="2024-01-10T11:35:58.998Z" hostname="chromium" tests="6" failures="0" skipped="0" time="22.382" errors="0">
+<testcase name="Contact Hotel › Customer must be able to contact hotel by filling up all mandatory fields @sanity" classname="tests\contactHotel.spec.ts" time="6.02">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|tests-contactHotel-Contact-Hotel-Customer-must-f7fe6-tact-hotel-without-filling-up-the-Subject-field-chromium\test-failed-1.png]]
+[[ATTACHMENT|tests-contactHotel-Contact-Hotel-Customer-must-2c694-hotel-by-filling-up-all-mandatory-fields-sanity-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Hotel › Customer must NOT be able to contact hotel without filling up the Name field" classname="tests\contactHotel.spec.ts" time="3.167">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|tests-contactHotel-Contact-Hotel-Customer-must-2ffc2-contact-hotel-without-filling-up-the-Name-field-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Hotel › Customer must NOT be able to contact hotel without filling up an Email field" classname="tests\contactHotel.spec.ts" time="2.911">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|tests-contactHotel-Contact-Hotel-Customer-must-ebaa8-contact-hotel-without-filling-up-an-Email-field-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Hotel › Customer must NOT be able to contact hotel without filling up the Phone field" classname="tests\contactHotel.spec.ts" time="3.624">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|tests-contactHotel-Contact-Hotel-Customer-must-5fab8-ontact-hotel-without-filling-up-the-Phone-field-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Hotel › Customer must NOT be able to contact hotel without filling up the Subject field" classname="tests\contactHotel.spec.ts" time="3.484">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|tests-contactHotel-Contact-Hotel-Customer-must-f7fe6-tact-hotel-without-filling-up-the-Subject-field-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Contact Hotel › Customer must NOT be able to contact hotel without filling up the Message field" classname="tests\contactHotel.spec.ts" time="3.176">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|tests-contactHotel-Contact-Hotel-Customer-must-8c0a6-tact-hotel-without-filling-up-the-Message-field-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
