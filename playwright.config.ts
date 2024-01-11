@@ -12,7 +12,7 @@ const config: PlaywrightTestConfig = {
     ['allure-playwright'],
     ['monocart-reporter', {  
       name: "Monokart Report",
-      outputFile: './test-results/monokartReport.html'
+      outputFile: './playwright-monocart-report/index.html'
   }]
 
     
