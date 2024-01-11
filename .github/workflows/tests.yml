@@ -51,7 +51,7 @@ jobs:
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          path: test-results/
+          path: playwright-monocart-report/
           if-no-files-found: ignore
           retention-days: 1
   report:
@@ -87,7 +87,7 @@ jobs:
           id: move-to-reports-folder
           run: |
            mv playwright-report reports/playwright
-           mv test-results reports/monocart 
+           mv playwright-monocart-report reports/monocart 
           shell: bash
         - name: Setup Pages
           uses: actions/configure-pages@v4

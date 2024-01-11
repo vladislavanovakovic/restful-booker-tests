@@ -1,9 +1,9 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="12.732002">
-<testsuite name="tests\contactHotel.spec.ts" timestamp="2024-01-11T12:45:22.673Z" hostname="chromium" tests="1" failures="0" skipped="0" time="6.768" errors="0">
-<testcase name="Contact Hotel › Customer must be able to contact hotel by filling up all mandatory fields @sanity" classname="tests\contactHotel.spec.ts" time="6.768">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="10.745816000000001">
+<testsuite name="tests\contactHotel.spec.ts" timestamp="2024-01-11T14:49:20.836Z" hostname="chromium" tests="1" failures="0" skipped="0" time="5.785" errors="0">
+<testcase name="Contact Hotel › Customer must NOT be able to contact hotel without filling up the Message field" classname="tests\contactHotel.spec.ts" time="5.785">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|tests-contactHotel-Contact-Hotel-Customer-must-2c694-hotel-by-filling-up-all-mandatory-fields-sanity-chromium\trace.zip]]
+[[ATTACHMENT|tests-contactHotel-Contact-Hotel-Customer-must-8c0a6-tact-hotel-without-filling-up-the-Message-field-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
