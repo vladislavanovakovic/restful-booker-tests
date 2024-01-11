@@ -24,7 +24,7 @@ jobs:
       - name: Run Playwright Tests
         run: npx playwright test
       - name: Upload Playwright HTML Report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         if: always()
         with:
           name: playwright-report
@@ -33,18 +33,20 @@ jobs:
           retention-days: 1
   report:
       name: Publish Reports
-      if: '${{ always() }}'
+      if: ${{ always() }}
       runs-on: ubuntu-latest
-      needs:
-        - test
+      needs: [test]
       timeout-minutes: 30
       permissions:
         contents: read
         pages: write
         id-token: write
       concurrency:
-        group: pages
+        group: 'pages'
         cancel-in-progress: true
+      environment:
+          name: github-pages
+          url: ${{ steps.deployment.outputs.page_url }}
     
       steps:
         - name: Checkout Repository
@@ -55,6 +57,9 @@ jobs:
           uses: actions/setup-node@v4
           with:
            node-version: 20    
+        - name: Download Artifacts
+          id: download-artifacts
+          uses: actions/download-artifact@v4
         - name: Setup Pages
           uses: actions/configure-pages@v4
         - name: Upload Artifact
@@ -62,4 +67,5 @@ jobs:
           with:
            path: reports/
         - name: Deploy to GitHub Pages
-          uses: actions/deploy-pages@v3
+          id: deployment
+          uses: actions/deploy-pages@v4
