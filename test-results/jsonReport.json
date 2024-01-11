@@ -107,11 +107,9 @@
           "column": 6,
           "specs": [
             {
-              "title": "Customer must be able to contact hotel by filling up all mandatory fields @sanity",
+              "title": "Customer must NOT be able to contact hotel without filling up the Message field",
               "ok": true,
-              "tags": [
-                "sanity"
-              ],
+              "tags": [],
               "tests": [
                 {
                   "timeout": 60000,
@@ -123,17 +121,17 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 6768,
+                      "duration": 5785,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-01-11T12:45:27.215Z",
+                      "startTime": "2024-01-11T14:49:24.571Z",
                       "attachments": [
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\test-results\\tests-contactHotel-Contact-Hotel-Customer-must-2c694-hotel-by-filling-up-all-mandatory-fields-sanity-chromium\\trace.zip"
+                          "path": "c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\test-results\\tests-contactHotel-Contact-Hotel-Customer-must-8c0a6-tact-hotel-without-filling-up-the-Message-field-chromium\\trace.zip"
                         }
                       ]
                     }
@@ -141,9 +139,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "d4c6294d0916d404c5fc-589c8eae50ecce895723",
+              "id": "d4c6294d0916d404c5fc-c537d8186286ae4165d1",
               "file": "tests/contactHotel.spec.ts",
-              "line": 21,
+              "line": 64,
               "column": 7
             }
           ]
@@ -153,8 +151,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-01-11T12:45:17.500Z",
-    "duration": 17648.166,
+    "startTime": "2024-01-11T14:49:16.999Z",
+    "duration": 14429.801,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
