@@ -95,6 +95,6 @@ test.describe('Book a Room', () => {
     await expect(frontPage.bookingErrorMessage).toBeVisible()
     await expect(frontPage.bookingErrorMessage).toContainText(errorMessage)
     await expect(frontPage.bookingErrorMessage).toContainText(validationMessage)
-    //test
+
   })
 })
