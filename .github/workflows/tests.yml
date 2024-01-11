@@ -31,6 +31,21 @@ jobs:
           path: playwright-report/
           if-no-files-found: ignore
           retention-days: 1
+      - name: Upload Playwright Allure Results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: allure-results
+          path: allure-results/
+          if-no-files-found: ignore
+          retention-days: 1
+      - name: Upload Playwright Test Results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          path: test-results/
+          if-no-files-found: ignore
+          retention-days: 1
   report:
       name: Publish Reports
       if: ${{ always() }}
@@ -60,12 +75,20 @@ jobs:
         - name: Download Artifacts
           id: download-artifacts
           uses: actions/download-artifact@v4
+        - name: Generate Allure Report
+          run: npx allure generate allure-results -o allure-report --clean
+        - name: Move to Reports folder
+          id: move-to-reports-folder
+          run: |
+           mv playwright-report reports/playwright
+           mv allure-report reports/allure
+          shell: bash
         - name: Setup Pages
           uses: actions/configure-pages@v4
         - name: Upload Artifact
           uses: actions/upload-pages-artifact@v3
           with:
-           path: playwright-report/
+           path: reports/
         - name: Deploy to GitHub Pages
           id: deployment
           uses: actions/deploy-pages@v4
