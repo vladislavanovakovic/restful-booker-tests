@@ -1,8 +1,8 @@
 name: Playwright tests
-#'on':
- # push:
- #   branches:
- #     - main
+'on':
+  push:
+    branches:
+      - main
   workflow_dispatch: null
 jobs:
   test:
@@ -76,7 +76,7 @@ jobs:
           id: download-artifacts
           uses: actions/download-artifact@v4
         - name: Generate Allure Report
-          run: npx allure generate allure-results -o allure-report --clean
+          run: allure generate allure-results -o allure-report --clean
         - name: Move to Reports folder
           id: move-to-reports-folder
           run: |
