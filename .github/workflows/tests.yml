@@ -38,14 +38,7 @@ jobs:
           name: allure-results
           path: allure-results/
           if-no-files-found: ignore
-          retention-days: 1
-      - name: Upload Playwright Test Results
-        uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          path: test-results/
-          if-no-files-found: ignore
-          retention-days: 1
+          retention-days: 1    
       - name: Upload Playwright Monocart Report
         id: upload-playwright-monocart-report
         uses: actions/upload-artifact@v4
