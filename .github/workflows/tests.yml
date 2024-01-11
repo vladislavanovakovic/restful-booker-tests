@@ -38,6 +38,14 @@ jobs:
           name: allure-results
           path: allure-results/
           if-no-files-found: ignore
+          retention-days: 1
+      - name: Upload Playwright Test Results
+        id: upload-playwright-test-results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          path: test-results/
+          if-no-files-found: ignore
           retention-days: 1    
       - name: Upload Playwright Monocart Report
         id: upload-playwright-monocart-report
@@ -76,6 +84,13 @@ jobs:
         - name: Download Artifacts
           id: download-artifacts
           uses: actions/download-artifact@v4
+        - name: Merge Playwright Monocart Reports
+          id: merge-playwright-monocart-reports
+          run: |
+           curl -o previous-trend.json https://vladislavanovakovic.github.io/restful-booker-tests/monocart/index.json
+           npm run merge:report:monocart
+           chmod +x ./merge-test-results.sh
+           ./merge-test-results.sh
         - name: Move to Reports folder
           id: move-to-reports-folder
           run: |
