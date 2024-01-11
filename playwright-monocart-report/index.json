@@ -1,0 +1,594 @@
+{
+    "name": "Monokart Report",
+    "date": 1704977117468,
+    "dateH": "1/11/2024, 1:45:17 PM",
+    "duration": 18986,
+    "durationH": "18.10s",
+    "cwd": "c:/Users/vl.novakovic/Documents/repos/restful-booker-tests",
+    "outputFile": "c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\playwright-monocart-report\\index.html",
+    "outputDir": "c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\playwright-monocart-report",
+    "metadata": {
+        "actualWorkers": 1
+    },
+    "system": {
+        "cpu": {
+            "color": "#117DBB",
+            "count": 8,
+            "model": "Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz",
+            "speed": 1992
+        },
+        "mem": {
+            "color": "#8B12AE",
+            "total": 16937148416
+        },
+        "arch": "x64",
+        "platform": "win32",
+        "release": "10.0.22631",
+        "type": "Windows_NT",
+        "version": "Windows 11 Enterprise",
+        "uptime": 101574.39,
+        "hostname": "VLNOVAKOVIC",
+        "pid": 12048,
+        "node": "20.9.0",
+        "v8": "11.3.244.8-node.16",
+        "timestampStart": 1704977117468,
+        "ticks": [
+            {
+                "cpu": {
+                    "percent": 15.16
+                },
+                "mem": {
+                    "free": 6151196672
+                },
+                "timestamp": 1704977123697
+            },
+            {
+                "cpu": {
+                    "percent": 15.33
+                },
+                "mem": {
+                    "free": 6233522176
+                },
+                "timestamp": 1704977125704
+            },
+            {
+                "cpu": {
+                    "percent": 9.22
+                },
+                "mem": {
+                    "free": 6216597504
+                },
+                "timestamp": 1704977127729
+            },
+            {
+                "cpu": {
+                    "percent": 11.5
+                },
+                "mem": {
+                    "free": 6150352896
+                },
+                "timestamp": 1704977129742
+            },
+            {
+                "cpu": {
+                    "percent": 3.46
+                },
+                "mem": {
+                    "free": 6145720320
+                },
+                "timestamp": 1704977131757
+            },
+            {
+                "cpu": {
+                    "percent": 39.06
+                },
+                "mem": {
+                    "free": 6043131904
+                },
+                "timestamp": 1704977133773
+            },
+            {
+                "cpu": {
+                    "percent": 22.84
+                },
+                "mem": {
+                    "free": 6200807424
+                },
+                "timestamp": 1704977135786
+            },
+            {
+                "cpu": {
+                    "percent": 8.08
+                },
+                "mem": {
+                    "free": 6187409408
+                },
+                "timestamp": 1704977136443
+            }
+        ],
+        "workers": 4,
+        "jobs": [
+            {
+                "caseId": "589c8eae50ecce895723",
+                "parallelIndex": 0,
+                "workerIndex": 0,
+                "timestamp": 1704977127221,
+                "duration": 7799
+            }
+        ],
+        "cwd": "c:/Users/vl.novakovic/Documents/repos/restful-booker-tests",
+        "configFile": "playwright.config.ts",
+        "playwright": "1.40.1",
+        "monocart": "2.0.4",
+        "testDir": "",
+        "outputFile": "playwright-monocart-report/index.html",
+        "outputDir": "playwright-monocart-report",
+        "timestampEnd": 1704977136454
+    },
+    "artifacts": [],
+    "trends": [],
+    "columns": [
+        {
+            "id": "caseType",
+            "name": "",
+            "width": 36,
+            "sortable": false,
+            "align": "center",
+            "formatter": "iconCaseType",
+            "detailed": false
+        },
+        {
+            "id": "title",
+            "name": "Title",
+            "searchable": true,
+            "width": 350,
+            "maxWidth": 1230,
+            "detailed": false
+        },
+        {
+            "id": "type",
+            "name": "Type",
+            "width": 50,
+            "sortable": false,
+            "align": "center",
+            "formatter": "iconType",
+            "detailed": false
+        },
+        {
+            "id": "duration",
+            "name": "Duration",
+            "align": "right",
+            "sortAsc": false,
+            "formatter": "duration",
+            "detailed": false
+        },
+        {
+            "id": "errors",
+            "name": "Errors",
+            "width": 60,
+            "align": "center",
+            "comparer": "errors",
+            "formatter": "errors",
+            "detailed": false
+        },
+        {
+            "id": "logs",
+            "name": "Logs",
+            "width": 60,
+            "align": "center",
+            "comparer": "logs",
+            "formatter": "logs",
+            "detailed": false
+        },
+        {
+            "id": "annotations",
+            "name": "Annotations",
+            "width": 100,
+            "markdown": true,
+            "searchable": true,
+            "comparer": "annotations",
+            "formatter": "annotations",
+            "detailed": false
+        },
+        {
+            "id": "attachments",
+            "name": "Attachments",
+            "width": 100,
+            "align": "center",
+            "formatter": "attachments",
+            "detailed": false
+        },
+        {
+            "id": "status",
+            "name": "Status",
+            "align": "center",
+            "detailed": false
+        },
+        {
+            "id": "expectedStatus",
+            "name": "Expected",
+            "align": "center",
+            "detailed": false
+        },
+        {
+            "id": "outcome",
+            "name": "Outcome",
+            "align": "center",
+            "width": 85,
+            "detailed": false
+        },
+        {
+            "id": "retry",
+            "name": "Retry",
+            "align": "center",
+            "width": 50,
+            "detailed": false
+        },
+        {
+            "id": "location",
+            "name": "Location",
+            "classMap": "mcr-location",
+            "width": 200,
+            "maxWidth": 1981,
+            "detailed": false
+        }
+    ],
+    "rows": [
+        {
+            "id": "78ru2351f8m6de7wdtkk",
+            "title": "chromium",
+            "type": "suite",
+            "suiteType": "project",
+            "caseNum": 1,
+            "subs": [
+                {
+                    "id": "d4c6294d0916d404c5fc",
+                    "title": "tests/contactHotel.spec.ts",
+                    "type": "suite",
+                    "suiteType": "file",
+                    "caseNum": 1,
+                    "subs": [
+                        {
+                            "id": "d4c6294d0916d404c5fc",
+                            "title": "Contact Hotel",
+                            "type": "suite",
+                            "suiteType": "describe",
+                            "caseNum": 1,
+                            "subs": [
+                                {
+                                    "id": "589c8eae50ecce895723",
+                                    "title": "Customer must be able to contact hotel by filling up all mandatory fields @sanity",
+                                    "type": "case",
+                                    "caseType": "passed",
+                                    "ok": true,
+                                    "outcome": "expected",
+                                    "expectedStatus": "passed",
+                                    "location": "tests/contactHotel.spec.ts:21:7",
+                                    "timestamps": [
+                                        1704977127221,
+                                        1704977135020
+                                    ],
+                                    "duration": 7799,
+                                    "timeout": 60000,
+                                    "retry": 0,
+                                    "status": "passed",
+                                    "stepNum": 20,
+                                    "stepFailed": 0,
+                                    "stepSubs": true,
+                                    "subs": [
+                                        {
+                                            "id": "3oipi9zw5q9srxnxky7i",
+                                            "title": "Before Hooks",
+                                            "type": "step",
+                                            "stepType": "hook",
+                                            "duration": 5895,
+                                            "location": "",
+                                            "subs": [
+                                                {
+                                                    "id": "jj7vx6gymh4x9g2jso0d",
+                                                    "title": "beforeEach hook",
+                                                    "type": "step",
+                                                    "stepType": "hook",
+                                                    "duration": 5886,
+                                                    "location": "tests/contactHotel.spec.ts:14:8",
+                                                    "subs": [
+                                                        {
+                                                            "id": "zdu9loge6rre451yg79e",
+                                                            "title": "fixture: browser",
+                                                            "type": "step",
+                                                            "stepType": "fixture",
+                                                            "duration": 1025,
+                                                            "location": "",
+                                                            "subs": [
+                                                                {
+                                                                    "id": "xp8lwvrq7k34ji183gb3",
+                                                                    "title": "browserType.launch",
+                                                                    "type": "step",
+                                                                    "stepType": "pw:api",
+                                                                    "duration": 1019,
+                                                                    "location": ""
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "kr8j7m07p2ti3i8t3kt4",
+                                                            "title": "fixture: context",
+                                                            "type": "step",
+                                                            "stepType": "fixture",
+                                                            "duration": 32,
+                                                            "location": "",
+                                                            "subs": [
+                                                                {
+                                                                    "id": "owwhsszjecjvf18y5sje",
+                                                                    "title": "browser.newContext",
+                                                                    "type": "step",
+                                                                    "stepType": "pw:api",
+                                                                    "duration": 12,
+                                                                    "location": ""
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "6zrsvv10bnm0wanuux1t",
+                                                            "title": "fixture: page",
+                                                            "type": "step",
+                                                            "stepType": "fixture",
+                                                            "duration": 325,
+                                                            "location": "",
+                                                            "subs": [
+                                                                {
+                                                                    "id": "g7s1ku0d30q5fgzoh3h9",
+                                                                    "title": "browserContext.newPage",
+                                                                    "type": "step",
+                                                                    "stepType": "pw:api",
+                                                                    "duration": 320,
+                                                                    "location": ""
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "v8gmgba8ws2owuxmtx4p",
+                                                            "title": "page.goto(https://automationintesting.online/)",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 4452,
+                                                            "location": "pages/FrontPage.ts:49:21"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "ih1b21echdhm8zkf3nhj",
+                                            "title": "locator.fill(#name)",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 94,
+                                            "location": "pages/FrontPage.ts:52:37"
+                                        },
+                                        {
+                                            "id": "tzpbcym720ywsx8i6h9j",
+                                            "title": "locator.fill(#email)",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 71,
+                                            "location": "pages/FrontPage.ts:53:38"
+                                        },
+                                        {
+                                            "id": "kjv3bjbjneyct9upt3ec",
+                                            "title": "locator.fill(#phone)",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 85,
+                                            "location": "pages/FrontPage.ts:54:38"
+                                        },
+                                        {
+                                            "id": "z9fnyjkvhb731q6s3oyb",
+                                            "title": "locator.fill(#subject)",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 86,
+                                            "location": "pages/FrontPage.ts:55:40"
+                                        },
+                                        {
+                                            "id": "80pbwzws15dhgv6wt64n",
+                                            "title": "locator.fill(#description)",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 183,
+                                            "location": "pages/FrontPage.ts:56:44"
+                                        },
+                                        {
+                                            "id": "orxp75ju7yk4m84414bh",
+                                            "title": "locator.click(#submitContact)",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 216,
+                                            "location": "pages/FrontPage.ts:57:40"
+                                        },
+                                        {
+                                            "id": "jcrccibsapyh34zd6e4l",
+                                            "title": "expect.toContainText",
+                                            "type": "step",
+                                            "stepType": "expect",
+                                            "duration": 195,
+                                            "location": "tests/contactHotel.spec.ts:25:55"
+                                        },
+                                        {
+                                            "id": "p4vshdojzaqzlnnmhoun",
+                                            "title": "After Hooks",
+                                            "type": "step",
+                                            "stepType": "hook",
+                                            "duration": 947,
+                                            "location": "",
+                                            "subs": [
+                                                {
+                                                    "id": "4c47oofrei1418u65gk5",
+                                                    "title": "fixture: page",
+                                                    "type": "step",
+                                                    "stepType": "fixture",
+                                                    "duration": 1,
+                                                    "location": ""
+                                                },
+                                                {
+                                                    "id": "4xcwyabgm4xlba7pm9ek",
+                                                    "title": "fixture: context",
+                                                    "type": "step",
+                                                    "stepType": "fixture",
+                                                    "duration": 0,
+                                                    "location": ""
+                                                },
+                                                {
+                                                    "id": "o8yac0w6i3e7mqutukp9",
+                                                    "title": "attach \"trace\"",
+                                                    "type": "step",
+                                                    "stepType": "attach",
+                                                    "duration": 2,
+                                                    "location": ""
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "attachments": [
+                                        {
+                                            "name": "trace",
+                                            "path": "../test-results/tests-contactHotel-Contact-Hotel-Customer-must-2c694-hotel-by-filling-up-all-mandatory-fields-sanity-chromium/trace.zip",
+                                            "contentType": "application/zip",
+                                            "retry": 0
+                                        }
+                                    ]
+                                }
+                            ],
+                            "location": "tests/contactHotel.spec.ts:11:6"
+                        }
+                    ],
+                    "location": "tests/contactHotel.spec.ts:0:0"
+                }
+            ]
+        }
+    ],
+    "formatters": {},
+    "suiteTypes": [
+        "project",
+        "file",
+        "describe",
+        "shard"
+    ],
+    "caseTypes": [
+        "passed",
+        "flaky",
+        "skipped",
+        "failed"
+    ],
+    "traceViewerUrl": "https://trace.playwright.dev/?trace={traceUrl}",
+    "tags": {
+        "sanity": {
+            "value": 1
+        }
+    },
+    "summary": {
+        "tests": {
+            "name": "Tests",
+            "value": 1,
+            "nav": true,
+            "id": "tests"
+        },
+        "passed": {
+            "name": "Passed",
+            "value": 1,
+            "color": "green",
+            "nav": true,
+            "id": "passed",
+            "percent": "100.0%"
+        },
+        "flaky": {
+            "name": "Flaky",
+            "value": 0,
+            "color": "orange",
+            "nav": true,
+            "id": "flaky",
+            "percent": "0.0%"
+        },
+        "skipped": {
+            "name": "Skipped",
+            "value": 0,
+            "color": "gray",
+            "nav": true,
+            "id": "skipped",
+            "percent": "0.0%"
+        },
+        "failed": {
+            "name": "Failed",
+            "value": 0,
+            "color": "#d00",
+            "nav": true,
+            "id": "failed",
+            "percent": "0.0%"
+        },
+        "steps": {
+            "name": "Steps",
+            "value": 20,
+            "id": "steps"
+        },
+        "suites": {
+            "name": "Suites",
+            "value": 1,
+            "id": "suites"
+        },
+        "projects": {
+            "name": "Projects",
+            "description": "Suite type is project",
+            "value": 1,
+            "id": "projects"
+        },
+        "files": {
+            "name": "Files",
+            "description": "Suite type is file",
+            "value": 1,
+            "id": "files"
+        },
+        "describes": {
+            "name": "Describes",
+            "description": "Suite type is describe",
+            "value": 1,
+            "id": "describes"
+        },
+        "shards": {
+            "name": "Shards",
+            "description": "Suite type is shard (only in shading mode)",
+            "value": 0,
+            "id": "shards"
+        },
+        "retries": {
+            "name": "Retries",
+            "value": 0,
+            "id": "retries"
+        },
+        "errors": {
+            "name": "Errors",
+            "value": 0,
+            "id": "errors"
+        },
+        "logs": {
+            "name": "Logs",
+            "value": 0,
+            "id": "logs"
+        },
+        "attachments": {
+            "name": "Attachments",
+            "value": 1,
+            "id": "attachments"
+        },
+        "artifacts": {
+            "name": "Artifacts",
+            "value": 0
+        }
+    },
+    "pieChart": {
+        "ns": "mcr-pie",
+        "width": 360,
+        "height": 150,
+        "margin": 10,
+        "svg": "<svg viewBox=\"0 0 360 150\" width=\"100%\" height=\"100%\" xmlns=\"http://www.w3.org/2000/svg\"><g class=\"mcr-pie-path-passed\"><path d=\"M75,75 L75,10 A65,65 0 1 1 75,140 A65,65 0 1 1 75,10 z\" fill=\"green\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-flaky\"><path d=\"\" fill=\"orange\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-skipped\"><path d=\"\" fill=\"gray\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-failed\"><path d=\"\" fill=\"#d00\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,-10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g transform=\"translate(160 10)\"><g class=\"mcr-pie-legend-passed\" transform=\"translate(0 0)\"><circle cx=\"10\" cy=\"16\" r=\"10\" fill=\"green\" opacity=\"0.8\" /><text x=\"30\" y=\"16\" alignment-baseline=\"middle\">Passed</text><text x=\"115\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"middle\">1</text><text x=\"190\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"end\">100.0%</text></g><g class=\"mcr-pie-legend-flaky\" transform=\"translate(0 32)\"><circle cx=\"10\" cy=\"16\" r=\"10\" fill=\"orange\" opacity=\"0.8\" /><text x=\"30\" y=\"16\" alignment-baseline=\"middle\">Flaky</text><text x=\"115\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-skipped\" transform=\"translate(0 64)\"><circle cx=\"10\" cy=\"16\" r=\"10\" fill=\"gray\" opacity=\"0.8\" /><text x=\"30\" y=\"16\" alignment-baseline=\"middle\">Skipped</text><text x=\"115\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-failed\" transform=\"translate(0 96)\"><circle cx=\"10\" cy=\"16\" r=\"10\" fill=\"#d00\" opacity=\"0.8\" /><text x=\"30\" y=\"16\" alignment-baseline=\"middle\">Failed</text><text x=\"115\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g></g></svg>"
+    }
+}

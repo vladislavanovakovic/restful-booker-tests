@@ -75,13 +75,13 @@ jobs:
         - name: Download Artifacts
           id: download-artifacts
           uses: actions/download-artifact@v4
-        - name: Generate Allure Report
-          run: npx allure serve allure-results
+        #- name: Generate Allure Report
+        #  run: npx allure serve allure-results
         - name: Move to Reports folder
           id: move-to-reports-folder
           run: |
            mv playwright-report reports/playwright
-           mv allure-report reports/allure
+         #  mv allure-report reports/allure
           shell: bash
         - name: Setup Pages
           uses: actions/configure-pages@v4
