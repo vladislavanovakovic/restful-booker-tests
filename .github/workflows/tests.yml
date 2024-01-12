@@ -94,13 +94,13 @@ jobs:
           id: generate-allure-report
           run: |
            
-           npx allure generate playwright-allure-results -o playwright-allure-report --clean
+           npx allure generate allure-results -o allure-report --clean
         - name: Move to Reports folder
           id: move-to-reports-folder
           run: |
             mv playwright-report reports/playwright
             mv playwright-monocart-report reports/monocart 
-            mv playwright-allure-report reports/allure
+            mv allure-report reports/allure
           shell: bash
         - name: Setup Pages
           uses: actions/configure-pages@v4
