@@ -65,7 +65,7 @@ test.describe('Contact Hotel', () => {
      
     await frontPage.sendMessage(customerName, customerEmail, customerPhoneNumber, customerSubject, '')
 
-    const errorMessage = 'Message must be between 20 and 2000 characters.33'
+    const errorMessage = 'Message must be between 20 and 2000 characters.'
     const validationMessage = 'Message may not be blank'
     await expect(frontPage.contactFormErrorMessage).toContainText(errorMessage)
     await expect(frontPage.contactFormErrorMessage).toContainText(validationMessage)
