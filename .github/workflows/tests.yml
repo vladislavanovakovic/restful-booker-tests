@@ -19,7 +19,9 @@ jobs:
           node-version: 20           
       - name: Install dependencies
         id: install-dependencies
-        run: npm ci
+        run: |
+           npm ci
+           npm install -g allure-commandline
       - name: Install Playwright Browsers
         id: install-playwright-browsers
         run: npx playwright install --with-deps
