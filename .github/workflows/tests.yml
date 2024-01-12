@@ -10,18 +10,40 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
+        id: checkout-repository
         uses: actions/checkout@v4
       - name: Setup Node
+        id: setup-node
         uses: actions/setup-node@v4
         with:
           node-version: 20
+      - name: Cache Node Modules
+        id: cache-node-modules
+        uses: actions/cache@v3
+        with:
+          path: |
+            node_modules
+          key: modules-${{ hashFiles('package-lock.json') }}
+      - name: Cache Playwright Binaries
+        id: cache-playwright
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cache/ms-playwright
+          key: playwright-${{ hashFiles('package-lock.json') }}
       - name: Install dependencies
+        id: install-dependencies
+        if: steps.cache-node-modules.outputs.cache-hit != 'true'
         run: npm ci
       - name: Install Playwright Browsers
+        id: install-playwright-browsers
+        if: steps.cache-playwright.outputs.cache-hit != 'true'
         run: npx playwright install --with-deps
       - name: Install Playwright System Dependencies
+        id: install-playwright-system-dependencies
         run: npx playwright install-deps
       - name: Run Playwright Tests
+        id: run-playwright-tests
         run: npx playwright test
       - name: Upload Playwright HTML Report
         uses: actions/upload-artifact@v4
@@ -43,6 +65,7 @@ jobs:
         uses: actions/upload-artifact@v4
         if: always()
         with:
+          name: test-results
           path: test-results/
           if-no-files-found: ignore
           retention-days: 1    
@@ -79,7 +102,21 @@ jobs:
           id: setup-node
           uses: actions/setup-node@v4
           with:
-           node-version: 20    
+           node-version: 20 
+        - name: Cache Node Modules
+          id: cache-node-modules
+          uses: actions/cache@v3
+          with:
+            path: |
+              node_modules
+            key: modules-${{ hashFiles('package-lock.json') }}
+        - name: Cache Playwright Binaries
+          id: cache-playwright
+          uses: actions/cache@v3
+          with:
+           path: |
+            ~/.cache/ms-playwright
+           key: playwright-${{ hashFiles('package-lock.json') }}   
         - name: Download Artifacts
           id: download-artifacts
           uses: actions/download-artifact@v4
