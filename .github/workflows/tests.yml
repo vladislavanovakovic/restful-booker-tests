@@ -92,9 +92,7 @@ jobs:
           uses: actions/download-artifact@v4
         - name: Generate Allure Report
           id: generate-allure-report
-          run: |
-           
-           npx allure generate allure-results -o allure-report --clean
+          run: npx allure generate allure-results -o allure-report --clean           
         - name: Move to Reports folder
           id: move-to-reports-folder
           run: |
