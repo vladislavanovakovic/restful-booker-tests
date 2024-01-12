@@ -57,8 +57,8 @@ jobs:
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: playwright-allure-results
-          path: playwright-allure-results/
+          name: allure-results
+          path: allure-results/
           if-no-files-found: ignore
           retention-days: 1
   report:
@@ -92,14 +92,14 @@ jobs:
           uses: actions/download-artifact@v4
         - name: Generate Allure Report
           id: generate-allure-report
-          run: npx allure generate playwright-allure-results -o playwright-allure-report --clean
+          run: allure generate allure-results -o allure-report --clean
           
         - name: Move to Reports folder
           id: move-to-reports-folder
           run: |
             mv playwright-report reports/playwright
             mv playwright-monocart-report reports/monocart 
-            mv playwright-allure-report reports/allure
+            mv allure-report reports/allure
           shell: bash
         - name: Setup Pages
           uses: actions/configure-pages@v4

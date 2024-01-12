@@ -1,4 +1,4 @@
-import { PlaywrightTestConfig, devices} from '@playwright/test'
+import { PlaywrightTestConfig, devices } from '@playwright/test'
 
 const config: PlaywrightTestConfig = {
   timeout: 60000,
@@ -7,20 +7,22 @@ const config: PlaywrightTestConfig = {
     ['list'],
     ['line'],
     ['html', { open: 'on-failure' }],
-    ['json', {outputFile: 'test-results/jsonReport.json'}],
-    ['junit', {outputFile: 'test-results/junitReport.xml'}],
-    ['allure-playwright', {
-      detail: true,
-      outputFolder: 'playwright-allure-results',
-      suiteTitle: false
-    }],
-    ['monocart-reporter', {  
-      name: "Monokart Report",
-      outputFile: './playwright-monocart-report/index.html'
-  }]
-
-    
-],
+    ['json', { outputFile: 'test-results/jsonReport.json' }],
+    ['junit', { outputFile: 'test-results/junitReport.xml' }],
+    [
+      'allure-playwright',
+      {
+        outputFolder: 'allure-results'
+      }
+    ],
+    [
+      'monocart-reporter',
+      {
+        name: 'Monokart Report',
+        outputFile: './playwright-monocart-report/index.html'
+      }
+    ]
+  ],
 
   use: {
     headless: true,
@@ -34,12 +36,12 @@ const config: PlaywrightTestConfig = {
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: { ...devices['Desktop Chrome'] }
     },
 
     {
       name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
+      use: { ...devices['Desktop Firefox'] }
     }
   ]
 }
