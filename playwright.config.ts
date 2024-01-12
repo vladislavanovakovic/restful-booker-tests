@@ -9,7 +9,11 @@ const config: PlaywrightTestConfig = {
     ['html', { open: 'on-failure' }],
     ['json', {outputFile: 'test-results/jsonReport.json'}],
     ['junit', {outputFile: 'test-results/junitReport.xml'}],
-    ['allure-playwright'],
+    ['allure-playwright', {
+      detail: true,
+      outputFolder: 'playwright-allure-results',
+      suiteTitle: false
+    }],
     ['monocart-reporter', {  
       name: "Monokart Report",
       outputFile: './playwright-monocart-report/index.html'
