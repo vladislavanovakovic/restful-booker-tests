@@ -82,18 +82,13 @@ jobs:
            node-version: 20    
         - name: Download Artifacts
           id: download-artifacts
-          uses: actions/download-artifact@v4   
-        - name: Merge Playwright Monocart Reports
-          id: merge-playwright-monocart-reports
-          run: |          
-           npm run merge:report:monocart
-           chmod +x ./merge-test-results.sh
-           ./merge-test-results.sh     
+          uses: actions/download-artifact@v4
         - name: Move to Reports folder
           id: move-to-reports-folder
           run: |
             mv playwright-report reports/playwright
-            mv merged-monocart-report reports/monocart
+            mv playwright-monocart-report reports/monocart 
+            mv test-results reports/monocart
           shell: bash
         - name: Setup Pages
           uses: actions/configure-pages@v4
