@@ -23,21 +23,13 @@ jobs:
         with:
           path: |
             node_modules
-          key: modules-${{ hashFiles('package-lock.json') }}
-      - name: Cache Playwright Binaries
-        id: cache-playwright
-        uses: actions/cache@v3
-        with:
-          path: |
-            ~/.cache/ms-playwright
-          key: playwright-${{ hashFiles('package-lock.json') }}
+          key: modules-${{ hashFiles('package-lock.json') }}      
       - name: Install dependencies
         id: install-dependencies
         if: steps.cache-node-modules.outputs.cache-hit != 'true'
         run: npm ci
       - name: Install Playwright Browsers
         id: install-playwright-browsers
-        if: steps.cache-playwright.outputs.cache-hit != 'true'
         run: npx playwright install --with-deps
       - name: Install Playwright System Dependencies
         id: install-playwright-system-dependencies
@@ -109,14 +101,7 @@ jobs:
           with:
             path: |
               node_modules
-            key: modules-${{ hashFiles('package-lock.json') }}
-        - name: Cache Playwright Binaries
-          id: cache-playwright
-          uses: actions/cache@v3
-          with:
-           path: |
-            ~/.cache/ms-playwright
-           key: playwright-${{ hashFiles('package-lock.json') }}   
+            key: modules-${{ hashFiles('package-lock.json') }}        
         - name: Download Artifacts
           id: download-artifacts
           uses: actions/download-artifact@v4
