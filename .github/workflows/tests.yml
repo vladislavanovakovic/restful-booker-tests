@@ -90,6 +90,8 @@ jobs:
         - name: Download Artifacts
           id: download-artifacts
           uses: actions/download-artifact@v4
+        - name: Install dependencies
+          run: npm install -g allure-commandline
         - name: Generate Allure Report
           id: generate-allure-report
           run: |
