@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\playwright.config.ts",
-    "rootDir": "c:/Users/vl.novakovic/Documents/repos/restful-booker-tests",
+    "configFile": "C:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\playwright.config.ts",
+    "rootDir": "C:/Users/vl.novakovic/Documents/repos/restful-booker-tests",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 2
     },
     "preserveOutput": "always",
     "reporter": [
@@ -42,18 +42,22 @@
         }
       ],
       [
-        "c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\node_modules\\allure-playwright\\dist\\index.js",
+        "C:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\node_modules\\allure-playwright\\dist\\index.js",
         {
-          "detail": true,
-          "outputFolder": "playwright-allure-results",
-          "suiteTitle": false
+          "outputFolder": "allure-results"
         }
       ],
       [
-        "c:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\node_modules\\monocart-reporter\\lib\\index.js",
+        "C:\\Users\\vl.novakovic\\Documents\\repos\\restful-booker-tests\\node_modules\\monocart-reporter\\lib\\index.js",
         {
           "name": "Monokart Report",
           "outputFile": "./playwright-monocart-report/index.html"
+        }
+      ],
+      [
+        "blob",
+        {
+          "outputDir": "playwright-blob-report"
         }
       ]
     ],
@@ -64,12 +68,12 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "c:/Users/vl.novakovic/Documents/repos/restful-booker-tests/test-results",
+        "outputDir": "C:/Users/vl.novakovic/Documents/repos/restful-booker-tests/test-results",
         "repeatEach": 1,
         "retries": 0,
         "id": "chromium",
         "name": "chromium",
-        "testDir": "c:/Users/vl.novakovic/Documents/repos/restful-booker-tests",
+        "testDir": "C:/Users/vl.novakovic/Documents/repos/restful-booker-tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -77,12 +81,12 @@
         "timeout": 60000
       },
       {
-        "outputDir": "c:/Users/vl.novakovic/Documents/repos/restful-booker-tests/test-results",
+        "outputDir": "C:/Users/vl.novakovic/Documents/repos/restful-booker-tests/test-results",
         "repeatEach": 1,
         "retries": 0,
         "id": "firefox",
         "name": "firefox",
-        "testDir": "c:/Users/vl.novakovic/Documents/repos/restful-booker-tests",
+        "testDir": "C:/Users/vl.novakovic/Documents/repos/restful-booker-tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -90,13 +94,131 @@
         "timeout": 60000
       }
     ],
-    "shard": null,
+    "shard": {
+      "current": 4,
+      "total": 4
+    },
     "updateSnapshots": "missing",
     "version": "1.40.1",
     "workers": 4,
     "webServer": null
   },
   "suites": [
+    {
+      "title": "tests\\createRoom.spec.ts",
+      "file": "tests/createRoom.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Creating room",
+          "file": "tests/createRoom.spec.ts",
+          "line": 21,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Admin user must be able to create new room by filling up all mandatory fields @sanity",
+              "ok": true,
+              "tags": [
+                "sanity"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 5584,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-01-22T09:28:28.826Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "75d87f9741b085816523-626dd234898e8d8b7857",
+              "file": "tests/createRoom.spec.ts",
+              "line": 36,
+              "column": 7
+            },
+            {
+              "title": "Admin user must NOT be able to create new room with the room name empty",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 2421,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-01-22T09:28:36.291Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "75d87f9741b085816523-617c8a85ee1e80bdb767",
+              "file": "tests/createRoom.spec.ts",
+              "line": 41,
+              "column": 7
+            },
+            {
+              "title": "Admin user must NOT be able to create new room with the room price less than 1",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 2194,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-01-22T09:28:38.714Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "75d87f9741b085816523-35debfb3770eaee0c8b9",
+              "file": "tests/createRoom.spec.ts",
+              "line": 48,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
     {
       "title": "tests\\loginToTheWebsite.spec.ts",
       "file": "tests/loginToTheWebsite.spec.ts",
@@ -121,27 +243,91 @@
                   "timeout": 60000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 1,
                       "status": "passed",
-                      "duration": 1718,
+                      "duration": 4126,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-01-12T11:01:51.536Z",
+                      "startTime": "2024-01-22T09:28:23.633Z",
                       "attachments": []
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "50ecc232c8fc90ecef5b-10ba1bc0af14803292ad",
+              "id": "50ecc232c8fc90ecef5b-280306e88f67dd4bd7aa",
               "file": "tests/loginToTheWebsite.spec.ts",
               "line": 12,
+              "column": 7
+            },
+            {
+              "title": "Customer must NOT be able to log in to the hotel website without filling up the username field",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 2267,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-01-22T09:28:29.771Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "50ecc232c8fc90ecef5b-33dc190531d5ad2fd997",
+              "file": "tests/loginToTheWebsite.spec.ts",
+              "line": 18,
+              "column": 7
+            },
+            {
+              "title": "Customer must NOT be able to log in to the hotel website without filling up the password field",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 2221,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-01-22T09:28:32.041Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "50ecc232c8fc90ecef5b-3b9a58916a2aedbb984b",
+              "file": "tests/loginToTheWebsite.spec.ts",
+              "line": 23,
               "column": 7
             }
           ]
@@ -151,9 +337,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-01-12T11:01:50.791Z",
-    "duration": 3176.9629999999997,
-    "expected": 1,
+    "startTime": "2024-01-22T09:28:19.782Z",
+    "duration": 22223.124,
+    "expected": 6,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
