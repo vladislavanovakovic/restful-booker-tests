@@ -1,12 +1,13 @@
 import { PlaywrightTestConfig, devices } from '@playwright/test'
 
+
 const config: PlaywrightTestConfig = {
   timeout: 60000,
   retries: 0,
-  reporter: [
+  reporter: process.env.CI?  [
     ['list'],
     ['line'],
-    ['html', { open: 'on-failure' }],
+    ['html', { open: 'never' }],
     [
       'allure-playwright',
       {
