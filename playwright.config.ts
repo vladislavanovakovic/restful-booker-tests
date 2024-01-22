@@ -7,8 +7,6 @@ const config: PlaywrightTestConfig = {
     ['list'],
     ['line'],
     ['html', { open: 'on-failure' }],
-    ['json', { outputFile: 'test-results/jsonReport.json' }],
-    ['junit', { outputFile: 'test-results/junitReport.xml' }],
     [
       'allure-playwright',
       {
@@ -21,7 +19,8 @@ const config: PlaywrightTestConfig = {
         name: 'Monokart Report',
         outputFile: './playwright-monocart-report/index.html'
       }
-    ]
+    ],
+    ['blob', { outputDir: 'playwright-blob-report' }],
   ],
 
   use: {
