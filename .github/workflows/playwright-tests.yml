@@ -62,9 +62,9 @@ jobs:
         - name: Download Playwright Blob Reports
           uses: actions/download-artifact@v4
           with:
-           path: playwright-all-blob-reports
+           path: playwright-blob-report
            pattern: playwright-blob-report-*
            merge-multiple: true    
         - name: Merge Playwright HTML Reports
-          run: npx playwright merge-reports --reporter html ./playwright-all-blob-reports  
+          run: npx playwright merge-reports --reporter html ./playwright-blob-report  
 
