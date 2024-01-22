@@ -7,13 +7,7 @@ name: Playwright tests
 jobs:
   test:
     name: Playwright Tests    
-    runs-on: ubuntu-latest 
-    timeout-minutes: 60    
-    strategy:
-      fail-fast: false
-      matrix:
-        shardIndex: [1, 2, 3, 4]
-        shardTotal: [4]   
+    runs-on: ubuntu-latest    
     steps:
       - name: Checkout Repository
         id: checkout-repository
@@ -33,21 +27,21 @@ jobs:
         id: install-playwright-system-dependencies
         run: npx playwright install-deps
       - name: Run Playwright Tests
-        id: run-playwright-tests 
-        run: npx playwright test --shard=${{ matrix.shardIndex }}/${{ matrix.shardTotal }}
-      - name: Upload Playwright Blob Report
+        id: run-playwright-tests
+        run: npx playwright test
+      - name: Upload Playwright HTML Report
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: playwright-blob-report-${{ matrix.shardIndex }}_${{ matrix.shardTotal }}
-          path: playwright-blob-report/
+          name: playwright-report
+          path: playwright-report/
           if-no-files-found: ignore
-          retention-days: 1          
+          retention-days: 1     
       - name: Upload Playwright Test Results
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: test-results-${{ matrix.shardIndex }}_${{ matrix.shardTotal }}
+          name: test-results
           path: test-results/
           if-no-files-found: ignore
           retention-days: 1    
@@ -55,7 +49,7 @@ jobs:
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: playwright-monocart-report-${{ matrix.shardIndex }}_${{ matrix.shardTotal }}
+          name: playwright-monocart-report
           path: playwright-monocart-report/
           if-no-files-found: ignore
           retention-days: 1
@@ -63,12 +57,12 @@ jobs:
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: allure-results-${{ matrix.shardIndex }}_${{ matrix.shardTotal }}
+          name: allure-results
           path: allure-results/
           if-no-files-found: ignore
           retention-days: 1
   report:
-      name: Merge and Publish Reports
+      name: Publish Reports
       if: ${{ always() }}
       runs-on: ubuntu-latest
       needs: [test]
@@ -92,38 +86,10 @@ jobs:
           id: setup-node
           uses: actions/setup-node@v4
           with:
-           node-version: 20  
-        - name: Download Playwright Blob Reports
+           node-version: 20                       
+        - name: Download Artifacts
+          id: download-artifacts
           uses: actions/download-artifact@v4
-          with:
-           path: playwright-all-blob-reports
-           pattern: playwright-blob-report-*
-           merge-multiple: true
-        - name: Merge Playwright HTML Reports
-          run: npx playwright merge-reports --reporter html ./playwright-all-blob-reports
-        - name: Download Monocart Reports
-          id: download-monocart-reports
-          uses: actions/download-artifact@v4
-          with:
-           pattern: monocart-report-*   
-        - name: Download Test Results
-          id: download-test-results
-          uses: actions/download-artifact@v4
-          with:
-           path: merged-monocart-report/data
-           pattern: test-results-*
-           merge-multiple: true   
-        - name: Merge Playwright Monocart Reports
-          id: merge-playwright-monocart-reports
-          run: |
-           npm run merge:report:monocart   
-        - name: Download Allure Results
-          id: download-allure-results
-          uses: actions/download-artifact@v4
-          with:
-           path: allure-results
-           pattern: allure-results-*
-           merge-multiple: true         
         - name: Install dependencies
           run: npm install -g allure-commandline
         - name: Generate Allure Report
