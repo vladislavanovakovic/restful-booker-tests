@@ -35,6 +35,9 @@ jobs:
       - name: Run Playwright Tests
         id: run-playwright-tests 
         run: npx playwright test --shard=${{ matrix.shardIndex }}/${{ matrix.shardTotal }}
+        env:
+          ENV: local
+          BLOB_NAME: ${{ matrix.shardIndex }}
       - name: Upload Playwright Blob Report
         uses: actions/upload-artifact@v4
         if: always()

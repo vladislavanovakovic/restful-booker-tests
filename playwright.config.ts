@@ -12,6 +12,7 @@ const config: PlaywrightTestConfig = {
     [
       'allure-playwright',
       {
+        detail: true,
         outputFolder: 'allure-results'
       }
     ],
@@ -26,21 +27,21 @@ const config: PlaywrightTestConfig = {
   : [
     ['list'],
     ['line'],
-    ['html', { open: 'on-failure' }],
-    [
-      'monocart-reporter',
-      {
-        name: 'Restful Booker Tests',
-        outputFile: './playwright-monocart-report/index.html'
-      }
-    ],
+    ['html', { open: 'on-failure' }],    
     [
       'allure-playwright',
       {
         detail: true,
         outputFolder: 'allure-results'      
       }
-    ]
+    ],
+    [
+      'monocart-reporter',
+      {
+        name: 'Monokart Report',
+        outputFile: './playwright-monocart-report/index.html'
+      }
+    ],
   ],
 
   use: {
