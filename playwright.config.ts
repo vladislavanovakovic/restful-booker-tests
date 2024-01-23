@@ -8,6 +8,7 @@ const config: PlaywrightTestConfig = {
     ['list'],
     ['line'],
     ['html', { open: 'never' }],
+    ['blob', { outputDir: 'playwright-blob-report' }],
     [
       'allure-playwright',
       {
@@ -21,7 +22,25 @@ const config: PlaywrightTestConfig = {
         outputFile: './playwright-monocart-report/index.html'
       }
     ],
-    ['blob', { outputDir: 'playwright-blob-report' }],
+  ]
+  : [
+    ['list'],
+    ['line'],
+    ['html', { open: 'on-failure' }],
+    [
+      'monocart-reporter',
+      {
+        name: 'Restful Booker Tests',
+        outputFile: './playwright-monocart-report/index.html'
+      }
+    ],
+    [
+      'allure-playwright',
+      {
+        detail: true,
+        outputFolder: 'allure-results'      
+      }
+    ]
   ],
 
   use: {
