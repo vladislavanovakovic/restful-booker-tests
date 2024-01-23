@@ -142,8 +142,8 @@ jobs:
            path: allure-results
            pattern: allure-results-*
            merge-multiple: true
-        - name: Install dependencies
-          run: npm install -g allure-commandline
+        #- name: Install dependencies
+        #  run: npm install -g allure-commandline
         - name: Generate Allure Report
           id: generate-allure-report
           run: |    
