@@ -43,7 +43,7 @@ test.describe('Book a Room', () => {
     await frontPage.selectAvailableDates()
     await frontPage.clickBookButton()
 
-    const bookingSuccessMessage = 'Booking Successful1!'
+    const bookingSuccessMessage = 'Booking Successful!'
     const bookingConfirmationMessage = 'Congratulations! Your booking has been confirmed'
     await expect(frontPage.bookingConfirmationDialog).toBeVisible()
     await expect(frontPage.bookingConfirmationDialog).toContainText(bookingSuccessMessage)
