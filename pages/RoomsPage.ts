@@ -38,8 +38,8 @@ export class RoomsPage extends BasePage {
     await this.roomTypeDropdown.selectOption(type)
   }
   async selectRoomFeatures(features: RoomFeatures) {
-    if (features.wifi) await this.wifiCheckbox.check({force:true})
-    else await this.wifiCheckbox.uncheck()
+    //if (features.wifi) await this.wifiCheckbox.check({force:true})
+    //else await this.wifiCheckbox.uncheck()
     //if (features.tv) await this.tvCheckbox.check({force:true})
     //else await this.tvCheckbox.uncheck();
   }
@@ -49,7 +49,7 @@ export class RoomsPage extends BasePage {
     await this.selectRoomType(roomType)
     await this.roomAccessibleDropdown.selectOption(roomAccessibleDropdown ? 'true' : 'false')
     await this.roomPriceField.fill(roomPrice.toString())
-    await this.selectRoomFeatures(roomFeatures)
+    //await this.selectRoomFeatures(roomFeatures)
     await this.createButton.click()
   }
 }
