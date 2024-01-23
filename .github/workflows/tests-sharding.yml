@@ -142,11 +142,16 @@ jobs:
            path: allure-results
            pattern: allure-results-*
            merge-multiple: true
-        #- name: Install dependencies
-        #  run: npm install -g allure-commandline
+        - name: Install dependencies
+          run: npm install -g allure-commandline
         - name: Generate Allure Report
           id: generate-allure-report
-          run: |    
+          run: |   
+           curl --create-dirs -o ./playwright-allure-results/history/categories-trend.json https://vladislavanovakovic.github.io/restful-booker-tests/allure/history/categories-trend.json
+           curl --create-dirs -o ./playwright-allure-results/history/duration-trend.json https://vladislavanovakovic.github.io/restful-booker-tests/allure/history/duration-trend.json
+           curl --create-dirs -o ./playwright-allure-results/history/history-trend.json https://vladislavanovakovic.github.io/restful-booker-tests/allure/history/history-trend.json
+           curl --create-dirs -o ./playwright-allure-results/history/history.json https://vladislavanovakovic.github.io/restful-booker-tests/allure/history/history.json
+           curl --create-dirs -o ./playwright-allure-results/history/retry-trend.json https://vladislavanovakovic.github.io/restful-booker-tests/allure/history/retry-trend.json 
            npx allure generate allure-results -o playwright-allure-report --clean
         - name: Move to Reports folder
           id: move-to-reports-folder
