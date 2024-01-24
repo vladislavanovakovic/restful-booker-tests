@@ -87,7 +87,16 @@ jobs:
           name: playwright-blob-report-${{ matrix.shardIndex }}_${{ matrix.shardTotal }}
           path: playwright-blob-report/
           if-no-files-found: ignore
-          retention-days: 1        
+          retention-days: 1 
+      - name: Upload Playwright Allure Results
+        id: upload-playwright-allure-results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: allure-results-${{ matrix.shardIndex }}_${{ matrix.shardTotal }}
+          path: allure-results/
+          if-no-files-found: ignore
+          retention-days: 1      
   report:
       name: Merge and Publish Reports
       if: ${{ always() }}
