@@ -96,7 +96,25 @@ jobs:
           name: allure-results-${{ matrix.shardIndex }}_${{ matrix.shardTotal }}
           path: allure-results/
           if-no-files-found: ignore
-          retention-days: 1      
+          retention-days: 1  
+      - name: Upload Test Results
+        id: upload-test-results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: test-results-${{ matrix.shardIndex }}_${{ matrix.shardTotal }}
+          path: test-results/
+          if-no-files-found: ignore
+          retention-days: 1
+      - name: Upload Monocart Report
+        id: upload-monocart-report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: monocart-report-${{ matrix.shardIndex }}_${{ matrix.shardTotal }}
+          path: playwright-monocart-report/
+          if-no-files-found: ignore
+          retention-days: 1    
   report:
       name: Merge and Publish Reports
       if: ${{ always() }}
@@ -156,7 +174,7 @@ jobs:
            curl --create-dirs -o ./allure-results/history/history.json https://vladislavanovakovic.github.io/restful-booker-tests/allure/history/history-trend.json
            curl --create-dirs -o ./allure-results/history/duration-trend.json https://vladislavanovakovic.github.io/restful-booker-tests/allure/history/duration-trend.json
            curl --create-dirs -o ./allure-results/history/history-trend.json https://vladislavanovakovic.github.io/restful-booker-tests/allure/history/history-trend.json
-           curl --create-dirs -o ./allure-results/history/history.json https://vladislavanovakovic.github.io/restful-booker-tests/allure/history/history.json
+           curl --create-dirs -o ./allure-results/history/categories-trend https://vladislavanovakovic.github.io/restful-booker-tests/allure/history/history.json
            curl --create-dirs -o ./allure-results/history/retry-trend.json https://vladislavanovakovic.github.io/restful-booker-tests/allure/history/retry-trend.json
         - name: Install dependencies
           run: npm install -g allure-commandline
@@ -164,6 +182,23 @@ jobs:
           id: generate-allure-report
           run: |   
            npx allure generate allure-results -o allure-report --clean
+        - name: Download Monocart Reports
+          id: download-monocart-reports
+          uses: actions/download-artifact@v4
+          with:
+           pattern: monocart-report-*
+        - name: Download Test Results
+          id: download-test-results
+          uses: actions/download-artifact@v4
+          with:
+           path: test-results
+           pattern: test-results-*
+           merge-multiple: true
+        - name: Merge Playwright Monocart Reports
+          id: merge-playwright-monocart-reports
+          run: |
+           curl -o previous-trend.json https://vladislavanovakovic.github.io/restful-booker-tests/monocart/index.json
+           npm run merge:report:monocart
         - name: Move to Reports folder
           id: move-to-reports-folder
           run: |
