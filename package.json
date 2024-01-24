@@ -18,9 +18,10 @@
   "devDependencies": {
     "@playwright/test": "^1.40.1",
     "@types/node": "^20.11.5",
-    "allure-playwright": "^2.9.2",
     "allure-commandline": "2.26.0",
+    "allure-playwright": "^2.9.2",
     "monocart-reporter": "^2.0.4",
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
   }
 }
