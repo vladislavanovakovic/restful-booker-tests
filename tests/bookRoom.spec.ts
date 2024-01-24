@@ -56,7 +56,7 @@ test.describe('Book a Room', () => {
     await frontPage.selectAvailableDates()
     await frontPage.clickBookButton()
 
-    const errorMessage = 'Firstname should not be blank0'
+    const errorMessage = 'Firstname should not be blank'
     const validationMessage = 'size must be between 3 and 18'
     await expect(frontPage.bookingErrorMessage).toBeVisible()
     await expect(frontPage.bookingErrorMessage).toContainText(errorMessage)
