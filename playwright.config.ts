@@ -13,7 +13,7 @@ const config: PlaywrightTestConfig = {
       'allure-playwright',
       {
         detail: true,
-        outputFolder: 'playwright-allure-results'
+        outputFolder: 'allure-results'
       }
     ],
     [
@@ -32,7 +32,7 @@ const config: PlaywrightTestConfig = {
       'allure-playwright',
       {
         detail: true,
-        outputFolder: 'playwright-allure-results'      
+        outputFolder: 'allure-results'      
       }
     ],
     [
