@@ -150,9 +150,7 @@ jobs:
           with:
            path: allure-results
            pattern: allure-results-*
-           merge-multiple: true
-        - name: Install dependencies
-          run: npm install -g allure-commandline
+           merge-multiple: true        
         - name: Download previous trend data
           run: |
            curl --create-dirs -o ./playwright-allure-results/history/history.json https://vladislavanovakovic.github.io/restful-booker-tests/allure/history/history-trend.json
@@ -160,6 +158,8 @@ jobs:
            curl --create-dirs -o ./playwright-allure-results/history/history-trend.json https://vladislavanovakovic.github.io/restful-booker-tests/allure/history/history-trend.json
            curl --create-dirs -o ./playwright-allure-results/history/history.json https://vladislavanovakovic.github.io/restful-booker-tests/allure/history/history.json
            curl --create-dirs -o ./playwright-allure-results/history/retry-trend.json https://vladislavanovakovic.github.io/restful-booker-tests/allure/history/retry-trend.json
+        - name: Install dependencies
+          run: npm install -g allure-commandline
         - name: Generate Allure Report
           id: generate-allure-report
           run: |   
