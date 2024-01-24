@@ -204,6 +204,7 @@ jobs:
           run: |
            mv playwright-report reports/playwright
            mv allure-report reports/allure
+           mv playwright-monocart-report reports/monocart 
           shell: bash
         - name: Setup Pages
           uses: actions/configure-pages@v4
