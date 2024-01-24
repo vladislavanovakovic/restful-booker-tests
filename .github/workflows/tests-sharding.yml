@@ -93,8 +93,8 @@ jobs:
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: playwright-allure-results-${{ matrix.shardIndex }}_${{ matrix.shardTotal }}
-          path: playwright-allure-results/
+          name: allure-results-${{ matrix.shardIndex }}_${{ matrix.shardTotal }}
+          path: allure-results/
           if-no-files-found: ignore
           retention-days: 1      
   report:
@@ -148,27 +148,27 @@ jobs:
           id: download-allure-results
           uses: actions/download-artifact@v4
           with:
-           path: playwright-allure-results
-           pattern: playwright-allure-results-*
+           path: allure-results
+           pattern: allure-results-*
            merge-multiple: true        
         - name: Download previous trend data
           run: |
-           curl --create-dirs -o ./playwright-allure-results/history/history.json https://vladislavanovakovic.github.io/restful-booker-tests/allure/history/history-trend.json
-           curl --create-dirs -o ./playwright-allure-results/history/duration-trend.json https://vladislavanovakovic.github.io/restful-booker-tests/allure/history/duration-trend.json
-           curl --create-dirs -o ./playwright-allure-results/history/history-trend.json https://vladislavanovakovic.github.io/restful-booker-tests/allure/history/history-trend.json
-           curl --create-dirs -o ./playwright-allure-results/history/history.json https://vladislavanovakovic.github.io/restful-booker-tests/allure/history/history.json
-           curl --create-dirs -o ./playwright-allure-results/history/retry-trend.json https://vladislavanovakovic.github.io/restful-booker-tests/allure/history/retry-trend.json
+           curl --create-dirs -o ./allure-results/history/history.json https://vladislavanovakovic.github.io/restful-booker-tests/allure/history/history-trend.json
+           curl --create-dirs -o ./allure-results/history/duration-trend.json https://vladislavanovakovic.github.io/restful-booker-tests/allure/history/duration-trend.json
+           curl --create-dirs -o ./allure-results/history/history-trend.json https://vladislavanovakovic.github.io/restful-booker-tests/allure/history/history-trend.json
+           curl --create-dirs -o ./allure-results/history/history.json https://vladislavanovakovic.github.io/restful-booker-tests/allure/history/history.json
+           curl --create-dirs -o ./allure-results/history/retry-trend.json https://vladislavanovakovic.github.io/restful-booker-tests/allure/history/retry-trend.json
         - name: Install dependencies
           run: npm install -g allure-commandline
         - name: Generate Allure Report
           id: generate-allure-report
           run: |   
-           npx allure generate playwright-allure-results -o playwright-allure-report --clean
+           npx allure generate allure-results -o allure-report --clean
         - name: Move to Reports folder
           id: move-to-reports-folder
           run: |
            mv playwright-report reports/playwright
-           mv playwright-allure-report reports/allure
+           mv allure-report reports/allure
           shell: bash
         - name: Setup Pages
           uses: actions/configure-pages@v4
