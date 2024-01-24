@@ -9,7 +9,7 @@ const reportDataList = [
 ];
 
 merge(reportDataList, {
-  name: 'Playwright E2E Tests',
+  name: 'Restful booker tests',
   outputFile: 'final-monocart-report/index.html',
   trend: 'previous-trend.json',
   attachmentPath: (currentPath) => {
