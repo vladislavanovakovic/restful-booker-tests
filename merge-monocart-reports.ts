@@ -1,3 +1,4 @@
+//comment
 import { merge } from 'monocart-reporter';
 
 const reportDataList = [
