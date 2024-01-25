@@ -205,7 +205,7 @@ jobs:
            mv playwright-report reports/playwright
            mv allure-report reports/allure
            mkdir -p reports/monocart
-           mv merged-monocart-report reports/monocart 
+           mv merged-monocart-report/index.html reports/monocart/ 
           shell: bash
         - name: Debugging - List Reports Contents
           run: |
