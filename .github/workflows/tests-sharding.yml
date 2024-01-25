@@ -197,14 +197,14 @@ jobs:
         - name: Merge Playwright Monocart Reports
           id: merge-playwright-monocart-reports
           run: |
-          
+            curl -o previous-trend.json https://vladislavanovakovic.github.io/restful-booker-tests/monocart/index.json
             npm run merge:report:monocart
         - name: Move to Reports folder
           id: move-to-reports-folder
           run: |
            mv playwright-report reports/playwright
            mv allure-report reports/allure
-           mv final-monocart-report reports/monocart 
+           mv merged-monocart-report reports/monocart 
           shell: bash
         - name: Setup Pages
           uses: actions/configure-pages@v4
