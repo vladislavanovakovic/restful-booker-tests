@@ -7,7 +7,7 @@
     "tests:chrome": "playwright test --config=playwright.config.ts --project=Chromium",
     "tests:e2e": "playwright test --config=e2e.config.ts --project=Chromium",
     "merge:report:playwright": "tsx merge-playwright-reports.ts",
-    "merge:report:monocart": "tsx merge-monocart-reports.ts"
+    "merge:report:monocart": "tsc merge-monocart-reports.ts"
   },
   "author": "",
   "license": "ISC",
