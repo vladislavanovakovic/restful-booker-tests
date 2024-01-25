@@ -206,6 +206,9 @@ jobs:
            mv allure-report reports/allure
            mv final-monocart-report reports/monocart 
           shell: bash
+        - name: Debugging - List Reports Contents
+          run: |
+           ls -R reports
         - name: Setup Pages
           uses: actions/configure-pages@v4
         - name: Upload Artifact
