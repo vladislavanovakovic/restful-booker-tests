@@ -205,17 +205,17 @@ jobs:
            mv playwright-report reports/playwright
            mv allure-report reports/allure
            mkdir -p reports/monocart
-           mv merged-monocart-report/index.html reports/monocart/ 
+           mv merged-monocart-report reports/monocart/ 
           shell: bash
         - name: Debugging - List Reports Contents
           run: |
-           ls -R reports
+           ls -R reports      
         - name: Setup Pages
           uses: actions/configure-pages@v4
         - name: Upload Artifact
           uses: actions/upload-pages-artifact@v3
           with:
-           path: reports/
+           path: reports/       
         - name: Deploy to GitHub Pages
           id: deployment
           uses: actions/deploy-pages@v4
