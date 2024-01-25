@@ -12,7 +12,7 @@ merge(reportDataList, {
   name: 'Restful booker tests',
   outputFile: 'final-monocart-report/index.html',
   trend: 'previous-trend.json',
-  attachmentPath: (currentPath) => {
+ /* attachmentPath: (currentPath) => {
     const searchStr = '../test-results/';
     const replaceStr = './data/';
 
@@ -21,5 +21,5 @@ merge(reportDataList, {
     }
 
     return currentPath;
-  }
+  }*/
 });
