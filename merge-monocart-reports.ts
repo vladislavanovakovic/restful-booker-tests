@@ -10,7 +10,7 @@ const reportDataList = [
 
 merge(reportDataList, {
   name: 'Restful booker tests',
-  outputFile: 'final-monocart-report/index.html',
+  outputFile: 'playwright-monocart-report/index.html',
   trend: 'previous-trend.json',
   attachmentPath: (currentPath) => {
     const searchStr = '../test-results/';
