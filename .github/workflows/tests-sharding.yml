@@ -188,7 +188,7 @@ jobs:
           with:
            path: merged-monocart-report
            pattern: monocart-report-*
-           merge-multiple: true
+          # merge-multiple: true
         - name: Download Test Results
           id: download-test-results
           uses: actions/download-artifact@v4
