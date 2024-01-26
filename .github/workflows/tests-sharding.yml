@@ -186,14 +186,14 @@ jobs:
           id: download-monocart-reports
           uses: actions/download-artifact@v4
           with:
-          # path: merged-monocart-report
+           path: merged-monocart-report
            pattern: monocart-report-*
            merge-multiple: true
         - name: Download Test Results
           id: download-test-results
           uses: actions/download-artifact@v4
           with:
-            path: merged-monocart-report/data
+            path: test-results
             pattern: test-results-*
             merge-multiple: true
         - name: Merge Playwright Monocart Reports
