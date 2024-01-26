@@ -197,7 +197,6 @@ jobs:
         - name: Merge Playwright Monocart Reports
           id: merge-playwright-monocart-reports
           run: |
-           curl -o previous-trend.json https://vladislavanovakovic.github.io/restful-booker-tests/monocart/index.json 
            npm run merge:report:monocart
         - name: Debugging - List Reports Contents
           run: |
