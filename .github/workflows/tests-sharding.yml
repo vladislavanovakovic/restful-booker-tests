@@ -185,10 +185,8 @@ jobs:
         - name: Download Monocart Reports
           id: download-monocart-reports
           uses: actions/download-artifact@v4
-          with:
-           path: merged-monocart-report
-           pattern: monocart-report-*
-          # merge-multiple: true
+          with:          
+           pattern: monocart-report-*    
         - name: Download Test Results
           id: download-test-results
           uses: actions/download-artifact@v4
