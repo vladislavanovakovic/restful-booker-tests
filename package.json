@@ -7,7 +7,7 @@
     "tests:chrome": "playwright test --config=playwright.config.ts --project=Chromium",
     "tests:e2e": "playwright test --config=e2e.config.ts --project=Chromium",
     "merge:report:playwright": "tsx merge-playwright-reports.ts",
-    "merge:report:monocart": "tsc merge-monocart-reports.ts"
+    "merge:report:monocart": "tsx merge-monocart-reports.ts"
   },
   "author": "",
   "license": "ISC",
@@ -22,6 +22,7 @@
     "allure-playwright": "^2.9.2",
     "monocart-reporter": "^2.0.4",
     "ts-node": "^10.9.2",
+    "tsx": "^4.7.0",
     "typescript": "^5.3.3"
   }
 }
