@@ -1,9 +1,9 @@
-name: Tests sharding
+name: Playwright tests
 'on':
-#  push:
-#    branches:
-#      - main
-  workflow_dispatch: null
+    workflow_dispatch: null
+    schedule:
+      - cron: '0 22 * * 1-5'
+
 jobs:
   install:
     name: Install    

@@ -1,9 +1,9 @@
 name: Sanity tests
 'on':
-    workflow_dispatch:
-    schedule:
-        - cron: '0 22 * * 1-5'
-
+    push:
+     branches:
+      - main
+    workflow_dispatch:    
 jobs:
   build:
     runs-on: ubuntu-latest
