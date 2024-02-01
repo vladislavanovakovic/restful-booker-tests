@@ -2,6 +2,8 @@ import { test, expect, APIRequestContext } from '@playwright/test';
 import { BaseApi } from './BaseApi';
 import { RoomType, RoomFeatures, getRoomFeaturesAsAList } from '../pages/RoomsPage'
 
+const path = '/room';
+
 
 export class RoomApi extends BaseApi{
     constructor(request: APIRequestContext){
@@ -9,7 +11,7 @@ export class RoomApi extends BaseApi{
     }
 
     async createARoom(roomName: string, roomType: RoomType, roomIsAccessible: boolean, roomFeatures: RoomFeatures, roomPrice: number,){
-        const response = await this.request.post('https://automationintesting.online/room/', {
+        const response = await this.request.post(`${path}/`, {
             data: {
               roomName: roomName,
               type: roomType,

@@ -1,5 +1,15 @@
 import { PlaywrightTestConfig, devices } from '@playwright/test'
 
+function getBaseUrl() {
+  const environment = process.env.ENV;
+  if (environment == undefined || environment == null) return 'https://automationintesting.online/';
+  else if (environment == 'prod') return 'https://automationintesting.online/';
+  else if (environment == 'local') return 'http://localhost';
+  else if (environment == 'kubeLocal') return 'http://kube.local';
+  else if (environment == 'docker') return 'http://rbp-proxy';
+  else return 'https://automationintesting.online/';
+}
+
 
 const config: PlaywrightTestConfig = {
   timeout: 60000,
@@ -45,6 +55,7 @@ const config: PlaywrightTestConfig = {
   ],
 
   use: {
+    baseURL: getBaseUrl(),
     headless: true,
     viewport: { width: 1280, height: 720 },
     actionTimeout: 15000,

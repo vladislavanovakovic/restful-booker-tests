@@ -29,7 +29,7 @@ test.describe('Book a Room', () => {
   };
 
   test.beforeEach(async ({ page, request }) => {
-    await page.goto('https://automationintesting.online/#/admin')
+    await page.goto('/#/admin')
     frontPage = new FrontPage(page)
     authAPi = new AuthAPi(request)
     roomApi = new RoomApi(request)

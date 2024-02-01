@@ -18,7 +18,7 @@ export class LoginPage extends BasePage {
 
 }
 async goto() {
-    await this.page.goto('https://automationintesting.online/#/admin')
+    await this.page.goto('/#/admin')
   }
 
   async loginToTheApp(username: string, password: string) {

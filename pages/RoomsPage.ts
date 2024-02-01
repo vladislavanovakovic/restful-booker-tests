@@ -32,7 +32,7 @@ export class RoomsPage extends BasePage {
     this.errorMessageBox = page.locator('.alert-danger')
   }
   async goto() {
-    await this.page.goto('https://automationintesting.online/#/admin')
+    await this.page.goto('/#/admin')
   }
   async selectRoomType(type: RoomType) {
     await this.roomTypeDropdown.selectOption(type)

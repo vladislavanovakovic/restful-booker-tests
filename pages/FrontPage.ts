@@ -46,7 +46,7 @@ export class FrontPage extends BasePage {
   }
 
   async goto() {
-    await this.page.goto('https://automationintesting.online/')
+    await this.page.goto('/')
   }
   async sendMessage(name: string, email: string, phone: string, subject: string, descrtiption: string) {
     await this.contactFormNameField.fill(name)
