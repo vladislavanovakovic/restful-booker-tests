@@ -50,6 +50,39 @@ jobs:
       matrix:
         shardIndex: [1, 2, 3, 4]
         shardTotal: [4]  
+    services:
+          rbp-booking:
+            image: mwinteringham/restfulbookerplatform_booking:1.6.24c7b22
+            ports:
+              - 3000:3000
+          rbp-room:
+            image: mwinteringham/restfulbookerplatform_room:1.6.24c7b22
+            ports:
+              - 3001:3001
+          rbp-branding:
+            image: mwinteringham/restfulbookerplatform_branding:1.6.24c7b22
+            ports:
+              - 3002:3002
+          rbp-assets:
+            image: mwinteringham/restfulbookerplatform_assets:1.6.24c7b22
+            ports:
+              - 3003:3003
+          rbp-auth:
+            image: mwinteringham/restfulbookerplatform_auth:1.6.24c7b22
+            ports:
+              - 3004:3004
+          rbp-report:
+            image: mwinteringham/restfulbookerplatform_report:1.6.24c7b22
+            ports:
+              - 3005:3005
+          rbp-message:
+            image: mwinteringham/restfulbookerplatform_message:1.6.24c7b22
+            ports:
+              - 3006:3006
+          rbp-proxy:
+            image: mwinteringham/restfulbookerplatform_proxy:latest
+            ports:
+              - 80:80
 
     steps:
       - name: Checkout Repository
@@ -79,7 +112,9 @@ jobs:
         run: npx playwright install-deps
       - name: Run Playwright Tests
         id: run-playwright-tests 
-        run: npx playwright test --shard=${{ matrix.shardIndex }}/${{ matrix.shardTotal }}        
+        run: npx playwright test --shard=${{ matrix.shardIndex }}/${{ matrix.shardTotal }}  
+        env:
+          ENV: local      
       - name: Upload Playwright Blob Report
         uses: actions/upload-artifact@v4
         if: always()
