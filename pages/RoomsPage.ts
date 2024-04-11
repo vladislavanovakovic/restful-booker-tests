@@ -78,3 +78,5 @@ export function getRoomFeaturesAsAList(roomFeatures: RoomFeatures) {
   if (roomFeatures.views) features.push('Views')
   return features
 }
+
+//comment
