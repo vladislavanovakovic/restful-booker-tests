@@ -1,9 +1,10 @@
-import { test, expect } from '@playwright/test'
+import { test,expect } from '@playwright/test'
 import { faker } from '@faker-js/faker'
 import { FrontPage } from '../pages/FrontPage'
 import { AuthAPi } from '../api/AuthApi'
 import { RoomApi } from '../api/RoomApi'
 import { RoomType,RoomFeatures } from '../pages/RoomsPage'
+
 
 const customerFirstName = faker.person.firstName()
 const customerLastName = faker.person.lastName()
@@ -58,7 +59,7 @@ test.describe('Book a Room', () => {
 
     const errorMessage = 'Firstname should not be blank'
     const validationMessage = 'size must be between 3 and 18'
-    await expect(frontPage.bookingErrorMessage).toBeVisible()
+    await expect(frontPage.bookingErrorMessage).toBeVisible();
     await expect(frontPage.bookingErrorMessage).toContainText(errorMessage)
     await expect(frontPage.bookingErrorMessage).toContainText(validationMessage)
   })

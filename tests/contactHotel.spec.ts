@@ -69,6 +69,7 @@ test.describe('Contact Hotel', () => {
     const validationMessage = 'Message may not be blank'
     await expect(frontPage.contactFormErrorMessage).toContainText(errorMessage)
     await expect(frontPage.contactFormErrorMessage).toContainText(validationMessage)
+    console.log(validationMessage)
 
   })
 })
