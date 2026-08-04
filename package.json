@@ -17,7 +17,7 @@
     "prettier": "^3.1.1"
   },
   "devDependencies": {
-    "@playwright/test": "^1.40.1",
+    "@playwright/test": "^1.62.1",
     "@types/chai": "^4.3.14",
     "@types/node": "^20.11.5",
     "allure-commandline": "2.26.0",

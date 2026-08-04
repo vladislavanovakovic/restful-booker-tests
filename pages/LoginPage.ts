@@ -2,7 +2,6 @@ import { Locator, Page } from '@playwright/test'
 import { BasePage } from './BasePage'
 
 export class LoginPage extends BasePage {
-    readonly pageLocator: Locator
     readonly usernameField: Locator
     readonly passwordField: Locator
     readonly loginButton: Locator
@@ -15,11 +14,11 @@ export class LoginPage extends BasePage {
         this.passwordField = page.locator('#password')
         this.loginButton = page.locator('#doLogin')
         this.logoutButton = page.getByRole('link', { name: 'Logout' })
+    }
 
-}
-async goto() {
-    await this.page.goto('/#/admin')
-  }
+    async goto() {
+        await this.page.goto('/#/admin')
+    }
 
   async loginToTheApp(username: string, password: string) {
     await this.usernameField.fill(username)
